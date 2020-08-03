@@ -189,9 +189,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.04375"
-     inkscape:cx="11991.834"
-     inkscape:cy="4816.5098"
+     inkscape:zoom="0.175"
+     inkscape:cx="2484.2156"
+     inkscape:cy="6469.4658"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -222,6 +222,13 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(111.8808,-1350.2667)">
+    <rect
+       style="opacity:1;fill:#f9ffff;fill-opacity:1;stroke:none;stroke-width:0.18970442;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       id="rect1698"
+       width="508.00003"
+       height="285.75"
+       x="-104.43864"
+       y="-439.29391" />
     <rect
        y="-439.29391"
        x="-104.43858"
