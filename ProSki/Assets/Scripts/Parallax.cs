@@ -8,8 +8,10 @@ public class Parallax : MonoBehaviour
         Taken from https://www.youtube.com/watch?v=zit45k6CUMk&list=PLGaBX05rw2wUeuQjERZuDm7o1VwFr3qf3&index=2&t=0s
     */
 
-    private float length;
-    private float startPosition;
+    private float lengthX;
+    private float lengthY;
+    private float startPositionX;
+    private float startPositionY;
 
     public GameObject cam;
     public float parallaxEffect;
@@ -17,24 +19,28 @@ public class Parallax : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        startPosition = transform.position.x;
-        length = GetComponent<SpriteRenderer>().bounds.size.x;
+        startPositionX = transform.position.x;
+        startPositionY = transform.position.y;
+        lengthX = GetComponent<SpriteRenderer>().bounds.size.x;
+        lengthY = GetComponent<SpriteRenderer>().bounds.size.y;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        float temp = (cam.transform.position.x * (1 - parallaxEffect));
+        float distX = (cam.transform.position.x * parallaxEffect);
+        float distY = (cam.transform.position.y * parallaxEffect);
+        transform.position = new Vector3(startPositionX + distX, startPositionY + distY, transform.position.z);
 
-        float dist = (cam.transform.position.x * parallaxEffect);
-        transform.position = new Vector3(startPosition + dist, transform.position.y, transform.position.z);
+        //Recreating background images X-wise
+        float tempX = (cam.transform.position.x * (1 - parallaxEffect));
 
-        if(temp > startPosition + length)
+        if (tempX > startPositionX + lengthX)
         {
-            startPosition += length;
-        } else if (temp < startPosition - length)
+            startPositionX += lengthX;
+        } else if (tempX < startPositionX - lengthX)
         {
-            startPosition -= length;
+            startPositionX -= lengthX;
         }
     }
 }
