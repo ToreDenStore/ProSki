@@ -368,13 +368,16 @@ PolygonCollider2D:
       - {x: 1.1749084, y: -0.08565721}
       - {x: 1.9229448, y: -0.12671559}
       - {x: 2.55613, y: -0.14823419}
+      - {x: 2.9018881, y: -0.14383583}
       - {x: 3.1227236, y: -0.1282968}
-      - {x: 3.2771792, y: -0.106952384}
+      - {x: 3.220079, y: -0.116582125}
+      - {x: 3.2848082, y: -0.1067935}
       - {x: 3.3479874, y: -0.092728786}
-      - {x: 3.4054325, y: -0.07564491}
+      - {x: 3.405414, y: -0.07477374}
       - {x: 3.4545286, y: -0.051979396}
       - {x: 3.5032163, y: -0.024146693}
-      - {x: 3.5906312, y: 0.044154245}
+      - {x: 3.5501928, y: 0.0078117633}
+      - {x: 3.5970683, y: 0.045580916}
       - {x: 3.632275, y: 0.07801777}
       - {x: 3.6690695, y: 0.12187743}
       - {x: 3.7004774, y: 0.1646776}
@@ -383,6 +386,7 @@ PolygonCollider2D:
       - {x: 3.735529, y: 0.23860899}
       - {x: 3.7688136, y: 0.33430126}
       - {x: 3.785694, y: 0.42841706}
+      - {x: 3.7921321, y: 0.4977611}
       - {x: 3.7857592, y: 0.535908}
 --- !u!1 &176809765
 GameObject:
@@ -3047,6 +3051,7 @@ GameObject:
   - component: {fileID: 1708116785}
   - component: {fileID: 1708116789}
   - component: {fileID: 1708116788}
+  - component: {fileID: 1708116790}
   m_Layer: 0
   m_Name: Skier 1
   m_TagString: Untagged
@@ -3086,8 +3091,8 @@ MonoBehaviour:
   - {fileID: 764570851}
   - {fileID: 88017861}
   m_Bounds:
-    m_Center: {x: -1.3350294, y: 1.4632933, z: 0}
-    m_Extent: {x: 3.9852316, y: 2.3817058, z: 0}
+    m_Center: {x: -1.3350294, y: 1.4632938, z: 0}
+    m_Extent: {x: 3.9852316, y: 2.3817053, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!212 &1708116786
@@ -3148,7 +3153,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1708116784}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.387, y: -4.599, z: 0}
+  m_LocalPosition: {x: -4.387, y: -4.49, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 176809766}
@@ -3172,9 +3177,9 @@ Rigidbody2D:
   m_AngularDrag: 0.5
   m_GravityScale: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!114 &1708116789
 MonoBehaviour:
@@ -3445,6 +3450,25 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!95 &1708116790
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708116784}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 37101edeaea5fc64c92bdd5757eb3a26, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1722418579
 PrefabInstance:
   m_ObjectHideFlags: 0

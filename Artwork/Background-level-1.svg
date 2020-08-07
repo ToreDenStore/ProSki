@@ -17,7 +17,7 @@
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="Background-level-1.svg"
-   inkscape:export-filename="C:\Users\ToreDenStore\Desktop\Jonatan\Projects\Sommarkurs 2020\Skier game\Artwork\Exports\Ground.png"
+   inkscape:export-filename="C:\Users\ToreDenStore\Desktop\Jonatan\Projects\Sommarkurs 2020\Skier game\Artwork\Exports\Foreground-up.png"
    inkscape:export-xdpi="200"
    inkscape:export-ydpi="200">
   <defs
@@ -182,9 +182,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.175"
-     inkscape:cx="1149.6969"
-     inkscape:cy="-205.06128"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="-1081.2581"
+     inkscape:cy="-436.17513"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -207,7 +207,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -376,16 +376,7 @@
        id="path866"
        inkscape:connector-curvature="0"
        inkscape:export-filename="C:\Users\ToreDenStore\Desktop\Jonatan\Projects\Sommarkurs 2020\Skier game\Artwork\Exports\Foreground-up.png"
-       inkscape:export-xdpi="200"
-       inkscape:export-ydpi="200" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path871"
-       d="m -168.8241,825.53644 c -101.05276,0 -330.49933,-39.06134 -443.74443,-38.17575 l -31.74986,0.64905 v 78.72602 h 505.73216 l 0.75596,-41.19932 z"
-       style="fill:#abffff;fill-opacity:1;stroke:none;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       sodipodi:nodetypes="scccccs"
-       inkscape:export-filename="C:\Users\ToreDenStore\Desktop\Jonatan\Projects\Sommarkurs 2020\Skier game\Artwork\Exports\Foreground-down.png"
-       inkscape:export-xdpi="200"
-       inkscape:export-ydpi="200" />
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
   </g>
 </svg>
