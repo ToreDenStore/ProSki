@@ -26,7 +26,7 @@ public class Parallax : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         float distX = (cam.transform.position.x * parallaxEffect);
         float distY = (cam.transform.position.y * parallaxEffect);
