@@ -183,8 +183,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="-1081.2581"
-     inkscape:cy="-436.17513"
+     inkscape:cx="-1258.0348"
+     inkscape:cy="-747.30211"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -364,19 +364,21 @@
        inkscape:export-ydpi="200" />
     <path
        style="opacity:1;fill:#abffff;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-       d="m -639.86339,550.24847 v 48.25389 h 507.99999 v -48.25389 z"
+       d="m -634.491,759.39035 v 52.91667 h 529.16668 v -52.91667 z"
        id="rect858"
        inkscape:connector-curvature="0"
        inkscape:export-filename="C:\Users\ToreDenStore\Desktop\Jonatan\Projects\Sommarkurs 2020\Skier game\Artwork\Exports\Foreground-flat.png"
-       inkscape:export-xdpi="200"
-       inkscape:export-ydpi="200" />
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       sodipodi:nodetypes="ccccc" />
     <path
        style="fill:#abffff;fill-opacity:1;stroke:none;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m -193.01457,639.57215 c -130.05139,-2e-5 -270.61411,47.11724 -400.65515,48.75878 l -51.40462,0.64905 v 47.73197 h 508.00002 v -97.1398 z"
+       d="m -158.24099,627.09868 c -130.05139,0 -293.2923,51.27513 -423.33334,52.91667 H -634.491 v 52.91667 h 529.16668 V 627.09868 Z"
        id="path866"
        inkscape:connector-curvature="0"
        inkscape:export-filename="C:\Users\ToreDenStore\Desktop\Jonatan\Projects\Sommarkurs 2020\Skier game\Artwork\Exports\Foreground-up.png"
-       inkscape:export-xdpi="400"
-       inkscape:export-ydpi="400" />
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       sodipodi:nodetypes="scccccs" />
   </g>
 </svg>
