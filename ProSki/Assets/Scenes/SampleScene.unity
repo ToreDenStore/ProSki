@@ -3098,15 +3098,15 @@ MonoBehaviour:
         serializedVersion: 2
         x: 305
         y: 113
-        width: 107
+        width: 114
         height: 32
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
       transitions:
       - fsmEvent:
-          name: FINISHED
-          isSystemEvent: 1
+          name: Staka finished
+          isSystemEvent: 0
           isGlobal: 0
         toState: Waiting for input
         linkStyle: 0
@@ -3116,13 +3116,15 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.AddForce2d
         - HutongGames.PlayMaker.Actions.AnimatorPlay
+        - HutongGames.PlayMaker.Actions.Wait
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000008000000
-        actionHashCodes: d596ab02c34b4105
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 00000000080000000d000000
+        actionHashCodes: d596ab02c34b410548c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -3165,7 +3167,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 100
+          value: 500
         - useVariable: 1
           name: 
           tooltip: 
@@ -3178,6 +3180,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0.95
         fsmIntParams:
         - useVariable: 1
           name: 
@@ -3209,13 +3217,14 @@ MonoBehaviour:
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
-        stringParams: []
-        byteData: 010000000000
+        stringParams:
+        - Staka finished
+        byteData: 00000000010000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000000700000025000000250000000f0000000f0000001c000000010000001400000012000000100000000f00000001000000
+        paramDataType: 140000000700000025000000250000000f0000000f0000001c000000010000001400000012000000100000000f000000010000000f0000001700000001000000
         paramName:
         - gameObject
         - forceMode
@@ -3230,13 +3239,19 @@ MonoBehaviour:
         - layer
         - normalizedTime
         - everyFrame
-        paramDataPos: 00000000000000000000000001000000000000000100000000000000040000000100000000000000000000000200000005000000
-        paramByteDataSize: 00000000040000000000000000000000000000000000000000000000010000000000000000000000000000000000000001000000
+        - time
+        - finishEvent
+        - realTime
+        paramDataPos: 00000000000000000000000001000000000000000100000000000000040000000100000000000000000000000200000005000000030000000000000006000000
+        paramByteDataSize: 00000000040000000000000000000000000000000000000000000000010000000000000000000000000000000000000001000000000000000000000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
       isGlobal: 0
     - name: SpacePressed
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: Staka finished
       isSystemEvent: 0
       isGlobal: 0
     globalTransitions: []
