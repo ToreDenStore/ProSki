@@ -1525,7 +1525,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1083160503}
   m_Layer: 0
-  m_Name: Torso-hip
+  m_Name: bone_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
