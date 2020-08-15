@@ -3645,7 +3645,7 @@ MonoBehaviour:
         - 
         actionEnabled: 0101010101
         actionIsOpen: 0101010101
-        actionStartIndex: 00000000060000000e0000001300000016000000
+        actionStartIndex: 0000000008000000100000001500000018000000
         actionHashCodes: ca51e900d596ab02c34b4105603dd90548c01101
         unityObjectParams: []
         fsmGameObjectParams: []
@@ -3678,7 +3678,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: GetForceStaka
+          value: GetForce
         - useVariable: 0
           name: 
           tooltip: 
@@ -3694,6 +3694,54 @@ MonoBehaviour:
           typeName: PlayerMoveScript
           value: {fileID: 1708116792}
         fsmVarParams:
+        - variableName: 
+          objectType: UnityEngine.Object
+          useVariable: 0
+          type: 0
+          floatValue: 8
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        - variableName: 
+          objectType: UnityEngine.Object
+          useVariable: 0
+          type: 0
+          floatValue: 800
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
         - variableName: ForceStaka
           objectType: UnityEngine.Object
           useVariable: 1
@@ -3791,16 +3839,18 @@ MonoBehaviour:
         stringParams:
         - Staka finished
         byteData: 00000000000001000001
-        arrayParamSizes: 00000000
+        arrayParamSizes: 02000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmVar
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 18000000120000000c000000270000000100000001000000140000000700000025000000250000000f0000000f0000001c000000010000001400000012000000100000000f000000010000001000000010000000010000000f0000001700000001000000
+        paramDataType: 18000000120000000c0000002700000027000000270000000100000001000000140000000700000025000000250000000f0000000f0000001c000000010000001400000012000000100000000f000000010000001000000010000000010000000f0000001700000001000000
         paramName:
         - behaviour
         - methodName
         - parameters
+        - 
+        - 
         - storeResult
         - everyFrame
         - manualUI
@@ -3823,8 +3873,8 @@ MonoBehaviour:
         - time
         - finishEvent
         - realTime
-        paramDataPos: 00000000000000000000000000000000000000000100000000000000020000000000000001000000000000000100000000000000060000000100000001000000000000000200000007000000010000000200000008000000030000000000000009000000
-        paramByteDataSize: 00000000000000000000000000000000010000000100000000000000040000000000000000000000000000000000000000000000010000000000000000000000000000000000000001000000000000000000000001000000000000000000000001000000
+        paramDataPos: 000000000000000000000000000000000100000002000000000000000100000000000000020000000000000001000000000000000100000000000000060000000100000001000000000000000200000007000000010000000200000008000000030000000000000009000000
+        paramByteDataSize: 000000000000000000000000000000000000000000000000010000000100000000000000040000000000000000000000000000000000000000000000010000000000000000000000000000000000000001000000000000000000000001000000000000000000000001000000
     - name: Adding force diagonala 2
       description: 
       colorIndex: 0
@@ -3861,7 +3911,7 @@ MonoBehaviour:
         - 
         actionEnabled: 0101010101
         actionIsOpen: 0101010101
-        actionStartIndex: 00000000060000000e0000001300000016000000
+        actionStartIndex: 0000000008000000100000001500000018000000
         actionHashCodes: ca51e900d596ab02c34b4105603dd90548c01101
         unityObjectParams: []
         fsmGameObjectParams: []
@@ -3894,7 +3944,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: GetForceStaka
+          value: GetForce
         - useVariable: 0
           name: 
           tooltip: 
@@ -3910,6 +3960,54 @@ MonoBehaviour:
           typeName: PlayerMoveScript
           value: {fileID: 1708116792}
         fsmVarParams:
+        - variableName: 
+          objectType: UnityEngine.Object
+          useVariable: 0
+          type: 0
+          floatValue: 8
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        - variableName: 
+          objectType: UnityEngine.Object
+          useVariable: 0
+          type: 0
+          floatValue: 800
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
         - variableName: ForceStaka
           objectType: UnityEngine.Object
           useVariable: 1
@@ -4007,16 +4105,18 @@ MonoBehaviour:
         stringParams:
         - Staka finished
         byteData: 00000000000001000001
-        arrayParamSizes: 00000000
+        arrayParamSizes: 02000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmVar
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 18000000120000000c000000270000000100000001000000140000000700000025000000250000000f0000000f0000001c000000010000001400000012000000100000000f000000010000001000000010000000010000000f0000001700000001000000
+        paramDataType: 18000000120000000c0000002700000027000000270000000100000001000000140000000700000025000000250000000f0000000f0000001c000000010000001400000012000000100000000f000000010000001000000010000000010000000f0000001700000001000000
         paramName:
         - behaviour
         - methodName
         - parameters
+        - 
+        - 
         - storeResult
         - everyFrame
         - manualUI
@@ -4039,8 +4139,8 @@ MonoBehaviour:
         - time
         - finishEvent
         - realTime
-        paramDataPos: 00000000000000000000000000000000000000000100000000000000020000000000000001000000000000000100000000000000060000000100000001000000000000000200000007000000010000000200000008000000030000000000000009000000
-        paramByteDataSize: 00000000000000000000000000000000010000000100000000000000040000000000000000000000000000000000000000000000010000000000000000000000000000000000000001000000000000000000000001000000000000000000000001000000
+        paramDataPos: 000000000000000000000000000000000100000002000000000000000100000000000000020000000000000001000000000000000100000000000000060000000100000001000000000000000200000007000000010000000200000008000000030000000000000009000000
+        paramByteDataSize: 000000000000000000000000000000000000000000000000010000000100000000000000040000000000000000000000000000000000000000000000010000000000000000000000000000000000000001000000000000000000000001000000000000000000000001000000
     - name: Checking which diagonala to use
       description: 
       colorIndex: 0
@@ -4310,8 +4410,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 909faf960ca01b74b9273609f8442ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stakaMaxSpeed: 10
-  stakaMaxForce: 500
 --- !u!4 &1799535635 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7889088746128824860, guid: 6ff7c4535b6727847bc97f2d257a290e,
