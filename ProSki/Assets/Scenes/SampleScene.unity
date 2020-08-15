@@ -287,7 +287,7 @@ GameObject:
   m_Component:
   - component: {fileID: 64663187}
   m_Layer: 0
-  m_Name: Left ski
+  m_Name: Right ski
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -300,10 +300,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 64663186}
-  m_LocalRotation: {x: -0, y: -0, z: 0.1451195, w: 0.9894141}
+  m_LocalRotation: {x: 0, y: 0, z: 0.17404224, w: 0.98473823}
   m_LocalPosition: {x: 0.48929197, y: -0.08503622, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1935039084}
   m_Father: {fileID: 2122257975}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 16.688002}
@@ -453,6 +454,70 @@ Transform:
   m_Father: {fileID: 249973975}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &368602162
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 368602164}
+  - component: {fileID: 368602163}
+  m_Layer: 0
+  m_Name: RightSkiSolver
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &368602163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368602162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30ae93fb156fc6d4c828c64571fc3edd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ConstrainRotation: 1
+  m_SolveFromDefaultPose: 1
+  m_Weight: 1
+  m_Chain:
+    m_EffectorTransform: {fileID: 1935039084}
+    m_TargetTransform: {fileID: 902490432}
+    m_TransformCount: 3
+    m_Transforms:
+    - {fileID: 2122257975}
+    - {fileID: 64663187}
+    - {fileID: 1935039084}
+    m_DefaultLocalRotations:
+    - {x: -0, y: -0, z: 0.5790483, w: 0.8152933}
+    - {x: -0, y: -0, z: 0.1451195, w: 0.9894141}
+    - {x: 0, y: 0, z: 0, w: 1}
+    m_StoredLocalRotations:
+    - {x: -0, y: -0, z: 0.5790483, w: 0.8152933}
+    - {x: -0, y: -0, z: 0.14511952, w: 0.98941416}
+    - {x: 0, y: 0, z: 0, w: 1}
+  m_Flip: 1
+--- !u!4 &368602164
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368602162}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 902490432}
+  m_Father: {fileID: 1708116787}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &387103092 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7889088746128824860, guid: 6ff7c4535b6727847bc97f2d257a290e,
@@ -513,10 +578,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 510618321}
-  m_LocalRotation: {x: -0, y: -0, z: 0.17903134, w: 0.98384345}
+  m_LocalRotation: {x: 0, y: 0, z: 0.16020373, w: 0.987084}
   m_LocalPosition: {x: 0.5847228, y: -0.049357235, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1845799952}
   m_Father: {fileID: 904788217}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 20.627}
@@ -1187,6 +1253,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 519420028}
   parallaxEffect: 0.2
+--- !u!1 &902490431
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 902490432}
+  m_Layer: 0
+  m_Name: RightSkiSolver_Target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &902490432
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902490431}
+  m_LocalRotation: {x: -0, y: -0, z: -0.022399185, w: 0.9997491}
+  m_LocalPosition: {x: 1.7293643, y: -0.87984234, z: 0}
+  m_LocalScale: {x: 3.333333, y: 3.333333, z: 3.333333}
+  m_Children: []
+  m_Father: {fileID: 368602164}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &904788216
 GameObject:
   m_ObjectHideFlags: 0
@@ -1210,7 +1306,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 904788216}
-  m_LocalRotation: {x: -0, y: -0, z: 0.5734756, w: 0.8192227}
+  m_LocalRotation: {x: 0, y: 0, z: 0.5887115, w: 0.80834323}
   m_LocalPosition: {x: 0.85737365, y: 0.010970056, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2096,6 +2192,36 @@ Transform:
   m_Father: {fileID: 1383934766}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1346448540
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1346448541}
+  m_Layer: 0
+  m_Name: LeftSkiSolver_Target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1346448541
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346448540}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0035971687, w: 0.9999935}
+  m_LocalPosition: {x: 1.5916728, y: -0.88465524, z: 0}
+  m_LocalScale: {x: 3.333333, y: 3.333333, z: 3.333333}
+  m_Children: []
+  m_Father: {fileID: 1542154559}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1383934765
 GameObject:
   m_ObjectHideFlags: 0
@@ -2507,6 +2633,70 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 519420028}
   parallaxEffect: 0.7
+--- !u!1 &1542154557
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1542154559}
+  - component: {fileID: 1542154558}
+  m_Layer: 0
+  m_Name: LeftSkiSolver
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1542154558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542154557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30ae93fb156fc6d4c828c64571fc3edd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ConstrainRotation: 1
+  m_SolveFromDefaultPose: 1
+  m_Weight: 1
+  m_Chain:
+    m_EffectorTransform: {fileID: 1845799952}
+    m_TargetTransform: {fileID: 1346448541}
+    m_TransformCount: 3
+    m_Transforms:
+    - {fileID: 904788217}
+    - {fileID: 510618322}
+    - {fileID: 1845799952}
+    m_DefaultLocalRotations:
+    - {x: -0, y: -0, z: 0.5734756, w: 0.8192227}
+    - {x: -0, y: -0, z: 0.17903134, w: 0.98384345}
+    - {x: 0, y: 0, z: 0, w: 1}
+    m_StoredLocalRotations:
+    - {x: 0, y: 0, z: 0, w: 0}
+    - {x: 0, y: 0, z: 0, w: 0}
+    - {x: 0, y: 0, z: 0, w: 0}
+  m_Flip: 1
+--- !u!4 &1542154559
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542154557}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1346448541}
+  m_Father: {fileID: 1708116787}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1570242820
 GameObject:
   m_ObjectHideFlags: 0
@@ -2873,8 +3063,8 @@ MonoBehaviour:
   - {fileID: 2122257975}
   - {fileID: 64663187}
   m_Bounds:
-    m_Center: {x: -1.1117, y: 0.9691032, z: 0}
-    m_Extent: {x: 3.9365873, y: 2.8758962, z: 0}
+    m_Center: {x: -1.1153698, y: 0.9691032, z: 0}
+    m_Extent: {x: 3.9236894, y: 2.8758962, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!212 &1708116786
@@ -2941,6 +3131,8 @@ Transform:
   - {fileID: 1383934766}
   - {fileID: 249973975}
   - {fileID: 1570242822}
+  - {fileID: 368602164}
+  - {fileID: 1542154559}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3392,8 +3584,14 @@ MonoBehaviour:
   m_Solvers:
   - {fileID: 249973974}
   - {fileID: 1570242821}
+  - {fileID: 368602163}
+  - {fileID: 1542154558}
   m_Weight: 1
   m_SolverEditorData:
+  - color: {r: 0, g: 1, b: 0, a: 1}
+    showGizmo: 1
+  - color: {r: 0, g: 1, b: 0, a: 1}
+    showGizmo: 1
   - color: {r: 0, g: 1, b: 0, a: 1}
     showGizmo: 1
   - color: {r: 0, g: 1, b: 0, a: 1}
@@ -3521,6 +3719,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1845799951
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1845799952}
+  m_Layer: 0
+  m_Name: LeftSkiEffector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1845799952
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845799951}
+  m_LocalRotation: {x: -0, y: -0, z: 0.00038301945, w: 1}
+  m_LocalPosition: {x: 2.45, y: -0.208, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 510618322}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.044000003}
 --- !u!1001 &1927683074
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3595,6 +3823,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ff7c4535b6727847bc97f2d257a290e, type: 3}
+--- !u!1 &1935039083
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1935039084}
+  m_Layer: 0
+  m_Name: RightSkiEffector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1935039084
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935039083}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0058767637, w: 0.9999828}
+  m_LocalPosition: {x: 2.482, y: -0.138, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 64663187}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.67300004}
 --- !u!4 &2086097745 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5736200327082544313, guid: d714a1de2e2ae36499d87a01ca6d95c2,
@@ -3611,7 +3869,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2122257975}
   m_Layer: 0
-  m_Name: Left foot
+  m_Name: Right foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3624,7 +3882,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2122257974}
-  m_LocalRotation: {x: -0, y: -0, z: 0.5790483, w: 0.8152933}
+  m_LocalRotation: {x: 0, y: 0, z: 0.5597949, w: 0.82863116}
   m_LocalPosition: {x: 0.8462511, y: -0.004447468, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
