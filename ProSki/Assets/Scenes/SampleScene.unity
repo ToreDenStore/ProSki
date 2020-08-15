@@ -3560,13 +3560,17 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.GetKey
+        - HutongGames.PlayMaker.Actions.BoolTest
         - HutongGames.PlayMaker.Actions.GetKeyDown
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: ff77a904
+        - 
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000300000007000000
+        actionHashCodes: 642ea003a4c8bf00ff77a904
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -3585,6 +3589,18 @@ MonoBehaviour:
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 1
+          name: SpaceIsHeldDown
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: SpaceIsHeldDown
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
           name: 
           tooltip: 
           showInInspector: 0
@@ -3597,18 +3613,27 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - SpacePressed
-        byteData: 20000000
+        - 
+        - SpacePressed
+        byteData: 20000000000020000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 070000001700000011000000
+        paramDataType: 07000000110000000100000011000000170000001700000001000000070000001700000011000000
         paramName:
+        - key
+        - storeResult
+        - everyFrame
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
         - key
         - sendEvent
         - storeResult
-        paramDataPos: 000000000000000000000000
-        paramByteDataSize: 040000000000000000000000
+        paramDataPos: 00000000000000000400000001000000000000000100000005000000060000000200000002000000
+        paramByteDataSize: 04000000000000000100000000000000000000000000000001000000040000000000000000000000
     - name: Adding force diagonala 1
       description: 
       colorIndex: 0
@@ -4242,6 +4267,9 @@ MonoBehaviour:
     - name: Diagonala2
       isSystemEvent: 0
       isGlobal: 0
+    - name: KeepSkiing
+      isSystemEvent: 0
+      isGlobal: 0
     - name: SpacePressed
       isSystemEvent: 0
       isGlobal: 0
@@ -4258,7 +4286,13 @@ MonoBehaviour:
         showInInspector: 0
         networkSync: 0
         value: 1
-      boolVariables: []
+      boolVariables:
+      - useVariable: 1
+        name: SpaceIsHeldDown
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
       stringVariables: []
       vector2Variables:
       - useVariable: 1
@@ -4279,7 +4313,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 0000000000000000
+      variableCategoryIDs: 000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
