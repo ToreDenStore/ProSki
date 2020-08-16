@@ -3385,7 +3385,6 @@ GameObject:
   - component: {fileID: 1708116790}
   - component: {fileID: 1708116791}
   - component: {fileID: 1708116792}
-  - component: {fileID: 1708116793}
   m_Layer: 0
   m_Name: Skier 1
   m_TagString: Untagged
@@ -5059,18 +5058,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 909faf960ca01b74b9273609f8442ba4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1708116793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1708116784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6108ade3688e82143a1da8cb12b062a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1799535635 stripped
