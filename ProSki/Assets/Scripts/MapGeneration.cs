@@ -37,16 +37,16 @@ public class MapGeneration : MonoBehaviour
             float widthLatest = latestBlock.localScale.x * baseWidth;
             float heightLatest = latestBlock.localScale.y;
 
-            int flatOrCurveBlock = Random.Range(i, i+1) - i;
+            int flatOrCurveBlock = Random.Range(i, i+2) - i;
             print("Flat or curve? " + flatOrCurveBlock);
 
             float widthNew = (Random.Range(0.5f + i, 1.5f + i) - i) * baseWidth;
             print("New width: " + widthNew);
 
-            float xNew = xLatest + widthLatest / 2 + widthNew / 2;
+            float xNew = xLatest + widthLatest;
             print("New position x: " + xNew);
 
-            Vector3 positionNew = new Vector3(xNew, 0, 0);
+            Vector3 positionNew = new Vector3(xNew, -7, 0);
 
             if (flatOrCurveBlock == 1)
             {
