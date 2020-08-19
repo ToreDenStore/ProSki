@@ -25,10 +25,10 @@ public class PlayerMoveScript : MonoBehaviour
 
         print("Forward vector: " + rb.transform.right);
 
-        Vector2 stakaForceVector = new Vector3(factor * maxForce * rb.transform.right.x, factor * maxForce * rb.transform.right.y);
+        Vector2 forceVector = new Vector3(factor * maxForce * rb.transform.right.x, factor * maxForce * rb.transform.right.y);
 
-        print("Staka force: " + stakaForceVector);
+        print("Staka force: " + forceVector);
 
-        return stakaForceVector;
+        return forceVector;
     }
 }
