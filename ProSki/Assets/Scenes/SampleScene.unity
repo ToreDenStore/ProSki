@@ -636,6 +636,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15e442094f5e9b243ab1f7c21f403e4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flatBlockPrefab: {fileID: 5736200327082544310, guid: d714a1de2e2ae36499d87a01ca6d95c2,
+    type: 3}
+  curveBlockPrefab: {fileID: 7889088746128824859, guid: 6ff7c4535b6727847bc97f2d257a290e,
+    type: 3}
+  startBlock: {fileID: 1210165302}
+  numberOfBlocks: 50
+  seed: 7
 --- !u!1 &352530879
 GameObject:
   m_ObjectHideFlags: 0
@@ -2291,6 +2298,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1210165302 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5736200327082544310, guid: d714a1de2e2ae36499d87a01ca6d95c2,
+    type: 3}
+  m_PrefabInstance: {fileID: 5736200327527932801}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1214441083
 GameObject:
   m_ObjectHideFlags: 0
