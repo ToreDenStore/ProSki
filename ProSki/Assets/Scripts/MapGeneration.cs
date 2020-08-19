@@ -11,6 +11,8 @@ public class MapGeneration : MonoBehaviour
     public int numberOfBlocks;
     public int seed;
 
+    public int baseWidth = 20;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,13 +34,13 @@ public class MapGeneration : MonoBehaviour
         {
             float xLatest = latestBlock.position.x;
             float yLatest = latestBlock.position.y;
-            float widthLatest = transform.localScale.x;
-            float heightLatest = transform.localScale.y;
+            float widthLatest = latestBlock.localScale.x * baseWidth;
+            float heightLatest = latestBlock.localScale.y;
 
             int flatOrCurveBlock = Random.Range(i, i+1) - i;
             print("Flat or curve? " + flatOrCurveBlock);
 
-            float widthNew = Random.Range(0.5f + i, 1.5f + i) - i;
+            float widthNew = (Random.Range(0.5f + i, 1.5f + i) - i) * baseWidth;
             print("New width: " + widthNew);
 
             float xNew = xLatest + widthLatest / 2 + widthNew / 2;
