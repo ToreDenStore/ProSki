@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Flat
+  - DownCurve
   layers:
   - Default
   - TransparentFX

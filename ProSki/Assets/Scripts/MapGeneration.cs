@@ -37,8 +37,8 @@ public class MapGeneration : MonoBehaviour
             float widthScaleLatest = latestBlock.transform.localScale.x;
             float heightScaleLatest = latestBlock.transform.localScale.y;
 
-            int flatOrCurveBlock = Random.Range(i, i+2) - i;
-            print("Flat or curve? " + flatOrCurveBlock);
+            int newBlockType = Random.Range(i, i+3) - i;
+            print("Flat or curve? " + newBlockType);
 
             float widthScaleNew = (Random.Range(0.5f + i, 1.5f + i) - i);
             print("New width scale: " + widthScaleNew);
@@ -58,20 +58,31 @@ public class MapGeneration : MonoBehaviour
             {
                 positionNew = new Vector3(xNew, yNew, 0);
                 print("previous object is flat");
+            } else if (latestBlock.tag == "DownCurve")
+            {
+                positionNew = new Vector3(xNew -= baseWidth * widthScaleLatest, yNew, 0); //Due to previous rotation I need to remove the width of the previous
+                print("previous object is a down-curve");
             } else
             {
                 positionNew = new Vector3(xNew, yNew + heightScaleLatest * baseHeight, 0);
-                print("previous object is a curve");
+                print("previous object is an up-curve");
             }
 
-            if (flatOrCurveBlock == 1)
+            if (newBlockType == 1)
             {
                 //Flat
                 latestBlock = GameObject.Instantiate(flatBlockPrefab, positionNew, new Quaternion());
+            } else if (newBlockType == 2)
+            {
+                //Curve up
+                latestBlock = GameObject.Instantiate(curveBlockPrefab, positionNew, new Quaternion());
             } else
             {
-                //Curve
-                latestBlock = GameObject.Instantiate(curveBlockPrefab, positionNew, new Quaternion());
+                //Curve down
+                positionNew.x += baseWidth * widthScaleNew; //Due to rotation I need to add its width again
+                positionNew.y -= baseHeight * heightScaleNew;
+                latestBlock = GameObject.Instantiate(curveBlockPrefab, positionNew, Quaternion.AngleAxis(180, Vector3.up));
+                latestBlock.tag = "DownCurve";
             }
 
             latestBlock.transform.localScale = new Vector3(widthScaleNew, heightScaleNew, 1);
