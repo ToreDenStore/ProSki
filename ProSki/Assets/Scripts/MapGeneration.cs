@@ -28,14 +28,14 @@ public class MapGeneration : MonoBehaviour
 
     void GenerateMap()
     {
-        Transform latestBlock = startBlock.transform;
+        GameObject latestBlock = startBlock;
 
         for (int i = 0; i < numberOfBlocks; i++)
         {
-            float xLatest = latestBlock.position.x;
-            float yLatest = latestBlock.position.y;
-            float widthScaleLatest = latestBlock.localScale.x;
-            float heightScaleLatest = latestBlock.localScale.y;
+            float xLatest = latestBlock.transform.position.x;
+            float yLatest = latestBlock.transform.position.y;
+            float widthScaleLatest = latestBlock.transform.localScale.x;
+            float heightScaleLatest = latestBlock.transform.localScale.y;
 
             int flatOrCurveBlock = Random.Range(i, i+2) - i;
             print("Flat or curve? " + flatOrCurveBlock);
@@ -57,14 +57,14 @@ public class MapGeneration : MonoBehaviour
             if (flatOrCurveBlock == 1)
             {
                 //Flat
-                latestBlock = GameObject.Instantiate(flatBlockPrefab, positionNew, new Quaternion()).transform;
+                latestBlock = GameObject.Instantiate(flatBlockPrefab, positionNew, new Quaternion());
             } else
             {
                 //Curve
-                latestBlock = GameObject.Instantiate(curveBlockPrefab, positionNew, new Quaternion()).transform;
+                latestBlock = GameObject.Instantiate(curveBlockPrefab, positionNew, new Quaternion());
             }
 
-            latestBlock.localScale = new Vector3(widthScaleNew, heightScaleNew, 1);
+            latestBlock.transform.localScale = new Vector3(widthScaleNew, heightScaleNew, 1);
         }
     }
 }
