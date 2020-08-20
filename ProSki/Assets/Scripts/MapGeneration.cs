@@ -7,11 +7,11 @@ public class MapGeneration : MonoBehaviour
     public GameObject flatBlockPrefab;
     public GameObject curveBlockPrefab;
     public GameObject startBlock;
-    //public GameObject player;
+
     public int numberOfBlocks;
     public int seed;
-
-    public int baseWidth = 20;
+    public int baseWidth;
+    public int baseHeight;
 
     // Start is called before the first frame update
     void Start()
@@ -34,31 +34,37 @@ public class MapGeneration : MonoBehaviour
         {
             float xLatest = latestBlock.position.x;
             float yLatest = latestBlock.position.y;
-            float widthLatest = latestBlock.localScale.x * baseWidth;
-            float heightLatest = latestBlock.localScale.y;
+            float widthScaleLatest = latestBlock.localScale.x;
+            float heightScaleLatest = latestBlock.localScale.y;
 
             int flatOrCurveBlock = Random.Range(i, i+2) - i;
             print("Flat or curve? " + flatOrCurveBlock);
 
-            float widthNew = (Random.Range(0.5f + i, 1.5f + i) - i) * baseWidth;
-            print("New width: " + widthNew);
+            float widthScaleNew = (Random.Range(0.5f + i, 1.5f + i) - i);
+            print("New width scale: " + widthScaleNew);
 
-            float xNew = xLatest + widthLatest;
+            float xNew = xLatest + widthScaleLatest * baseWidth;
             print("New position x: " + xNew);
+            
+            float heightScaleNew = (Random.Range(0.5f + i, 1.5f + i) - i);
+            print("New height scale: " + heightScaleNew);
 
-            Vector3 positionNew = new Vector3(xNew, -7, 0);
+            float yNew = yLatest - (heightScaleNew - heightScaleLatest) * baseHeight;
+            print("New position y: " + yNew);
+
+            Vector3 positionNew = new Vector3(xNew, yNew, 0);
 
             if (flatOrCurveBlock == 1)
             {
                 //Flat
-                GameObject newObject = GameObject.Instantiate(flatBlockPrefab, positionNew, new Quaternion());
-                latestBlock = newObject.transform;
+                latestBlock = GameObject.Instantiate(flatBlockPrefab, positionNew, new Quaternion()).transform;
             } else
             {
                 //Curve
-                GameObject newObject = GameObject.Instantiate(curveBlockPrefab, positionNew, new Quaternion());
-                latestBlock = newObject.transform;
+                latestBlock = GameObject.Instantiate(curveBlockPrefab, positionNew, new Quaternion()).transform;
             }
+
+            latestBlock.localScale = new Vector3(widthScaleNew, heightScaleNew, 1);
         }
     }
 }

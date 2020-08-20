@@ -641,9 +641,10 @@ MonoBehaviour:
   curveBlockPrefab: {fileID: 7889088746128824859, guid: 6ff7c4535b6727847bc97f2d257a290e,
     type: 3}
   startBlock: {fileID: 1210165302}
-  numberOfBlocks: 50
-  seed: 7
+  numberOfBlocks: 20
+  seed: 15
   baseWidth: 20
+  baseHeight: 2
 --- !u!1 &352530879
 GameObject:
   m_ObjectHideFlags: 0
