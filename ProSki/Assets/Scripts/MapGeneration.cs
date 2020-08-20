@@ -52,7 +52,17 @@ public class MapGeneration : MonoBehaviour
             float yNew = yLatest - (heightScaleNew - heightScaleLatest) * baseHeight;
             print("New position y: " + yNew);
 
-            Vector3 positionNew = new Vector3(xNew, yNew, 0);
+            Vector3 positionNew;
+
+            if (latestBlock.tag == "Flat")
+            {
+                positionNew = new Vector3(xNew, yNew, 0);
+                print("previous object is flat");
+            } else
+            {
+                positionNew = new Vector3(xNew, yNew + heightScaleLatest * baseHeight, 0);
+                print("previous object is a curve");
+            }
 
             if (flatOrCurveBlock == 1)
             {
