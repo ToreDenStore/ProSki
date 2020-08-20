@@ -12,19 +12,12 @@ public class MapGeneration : MonoBehaviour
     public int seed;
     public int baseWidth;
     public int baseHeight;
-
-    // Start is called before the first frame update
+    
     void Start()
     {
         Random.InitState(seed);
         GenerateMap();
     }
-
-    // Update is called once per frame
-    //void Update()
-    //{
-        
-    //}
 
     void GenerateMap()
     {
