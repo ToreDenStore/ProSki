@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3302522349718786084}
   m_Layer: 0
   m_Name: Foreground-flat
-  m_TagString: Untagged
+  m_TagString: Flat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91,7 +91,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 5736200327082544310}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 8be357cf6c59ad74294ea1f4a5e78965, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
