@@ -15,6 +15,11 @@ public class PlayerMoveScript : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
     public Vector2 GetForce(float maxSpeed, float maxForce)
     {
         float currentSpeedForward = Mathf.Sqrt(Mathf.Pow(Mathf.Max(0, rb.velocity.x), 2) + Mathf.Pow(Mathf.Max(0, rb.velocity.y), 2));
@@ -30,5 +35,11 @@ public class PlayerMoveScript : MonoBehaviour
         print("Staka force: " + forceVector);
 
         return forceVector;
+    }
+
+    public void SetDrag(float newDrag)
+    {
+        rb.drag = newDrag;
+        return;
     }
 }
