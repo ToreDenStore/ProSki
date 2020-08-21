@@ -450,7 +450,7 @@ PrefabInstance:
     - target: {fileID: 2023847619863835718, guid: 33f49adf57d328a45a65a6aee5847a0d,
         type: 3}
       propertyPath: m_Name
-      value: Sitting_text
+      value: Saxa_text
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33f49adf57d328a45a65a6aee5847a0d, type: 3}
@@ -611,7 +611,7 @@ PrefabInstance:
     - target: {fileID: 2023847619863835718, guid: 33f49adf57d328a45a65a6aee5847a0d,
         type: 3}
       propertyPath: m_Name
-      value: Diagonala_text
+      value: Saxa_text
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33f49adf57d328a45a65a6aee5847a0d, type: 3}
@@ -2894,7 +2894,7 @@ PrefabInstance:
     - target: {fileID: 2023847619863835718, guid: 33f49adf57d328a45a65a6aee5847a0d,
         type: 3}
       propertyPath: m_Name
-      value: Staka_text
+      value: Saxa_text
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33f49adf57d328a45a65a6aee5847a0d, type: 3}
