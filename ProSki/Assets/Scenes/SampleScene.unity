@@ -969,6 +969,8 @@ MonoBehaviour:
   curveBlockPrefab: {fileID: 7889088746128824859, guid: 6ff7c4535b6727847bc97f2d257a290e,
     type: 3}
   startBlock: {fileID: 1210165302}
+  finishBlock: {fileID: 5736200327082544310, guid: 45c1023499c7faf4eab3d818cefaf529,
+    type: 3}
   numberOfBlocks: 20
   seed: 15
   baseWidth: 20
