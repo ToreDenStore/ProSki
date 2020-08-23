@@ -1151,7 +1151,7 @@ MonoBehaviour:
   finishBlock: {fileID: 5736200327082544310, guid: 45c1023499c7faf4eab3d818cefaf529,
     type: 3}
   numberOfBlocks: 20
-  seed: 15
+  seed: 5651561
   baseWidth: 20
   baseHeight: 2
 --- !u!1 &352530879
@@ -5066,7 +5066,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 519420028}
-  parallaxEffect: 0.2
+  parallaxEffectX: 0.2
+  parallaxEffectY: 0.4
 --- !u!1 &768699678
 GameObject:
   m_ObjectHideFlags: 0
@@ -6638,7 +6639,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 519420028}
-  parallaxEffect: 1
+  parallaxEffectX: 1
+  parallaxEffectY: 1
 --- !u!1 &1101073938
 GameObject:
   m_ObjectHideFlags: 0
@@ -7577,7 +7579,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 519420028}
-  parallaxEffect: 0.7
+  parallaxEffectX: 0.7
+  parallaxEffectY: 0.85
 --- !u!1 &1542154557
 GameObject:
   m_ObjectHideFlags: 0
@@ -9001,7 +9004,7 @@ MonoBehaviour:
           objectType: UnityEngine.Object
           useVariable: 0
           type: 0
-          floatValue: 30
+          floatValue: 15
           intValue: 0
           boolValue: 0
           stringValue: 
@@ -9025,7 +9028,7 @@ MonoBehaviour:
           objectType: UnityEngine.Object
           useVariable: 0
           type: 0
-          floatValue: 300
+          floatValue: 400
           intValue: 0
           boolValue: 0
           stringValue: 
