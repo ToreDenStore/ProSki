@@ -49,8 +49,11 @@ public class ActiveIconController : MonoBehaviour
                 break;
         }
 
-        targetAnimator.SetBool("InterruptBool", false);
-        targetAnimator.Play("Style Icon Animation");
+        if (targetAnimator != null)
+        {
+            targetAnimator.SetBool("InterruptBool", false);
+            targetAnimator.Play("Style Icon Animation");
+        }
 
         return;
     }
