@@ -1156,7 +1156,7 @@ MonoBehaviour:
   finishBlock: {fileID: 5736200327082544310, guid: 45c1023499c7faf4eab3d818cefaf529,
     type: 3}
   numberOfBlocks: 20
-  seed: 1456
+  seed: 1
   baseWidth: 20
   baseHeight: 2
 --- !u!1 &352530879
@@ -9936,7 +9936,7 @@ MonoBehaviour:
           objectType: UnityEngine.Object
           useVariable: 0
           type: 0
-          floatValue: 0.1
+          floatValue: 0.3
           intValue: 0
           boolValue: 0
           stringValue: 
