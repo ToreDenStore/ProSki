@@ -7,6 +7,7 @@ public class MapGeneration : MonoBehaviour
     public GameObject flatBlockPrefab;
     public GameObject curveBlockPrefab;
     public GameObject startBlock;
+    public GameObject finishBlock;
 
     public int numberOfBlocks;
     public int seed;
@@ -61,7 +62,11 @@ public class MapGeneration : MonoBehaviour
                 print("previous object is an up-curve");
             }
 
-            if (newBlockType == 1)
+            if (i == numberOfBlocks - 1)
+            {
+                //Finish block
+                latestBlock = GameObject.Instantiate(finishBlock, positionNew, new Quaternion());
+            } else if (newBlockType == 1)
             {
                 //Flat
                 latestBlock = GameObject.Instantiate(flatBlockPrefab, positionNew, new Quaternion());
