@@ -5103,15 +5103,15 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
     name: FSM
-    startState: Paused
+    startState: Reset
     states:
     - name: Waiting for input
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 57.765625
-        y: 228.53906
+        x: 247.39062
+        y: 298.875
         width: 149
         height: 64
       isBreakpoint: 0
@@ -5222,8 +5222,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 464.39062
-        y: 110.77344
+        x: 656.3906
+        y: 158.77344
         width: 187
         height: 32
       isBreakpoint: 0
@@ -5327,8 +5327,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 441.4297
-        y: 246.27344
+        x: 633.4297
+        y: 294.27344
         width: 163
         height: 32
       isBreakpoint: 0
@@ -5432,8 +5432,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 481.95312
-        y: 173.875
+        x: 673.9531
+        y: 221.875
         width: 198
         height: 32
       isBreakpoint: 0
@@ -5563,8 +5563,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 486.34375
-        y: 316.6797
+        x: 678.34375
+        y: 364.6797
         width: 174
         height: 32
       isBreakpoint: 0
@@ -5694,8 +5694,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 475.33594
-        y: 443.4922
+        x: 667.33594
+        y: 491.4922
         width: 179
         height: 32
       isBreakpoint: 0
@@ -5825,8 +5825,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 453.45312
-        y: 382.9922
+        x: 645.4531
+        y: 430.9922
         width: 168
         height: 32
       isBreakpoint: 0
@@ -5925,13 +5925,13 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 00000000000000000000000000000000
         paramByteDataSize: 00000000000000000000000001000000
-    - name: Paused
+    - name: Reset
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 57.757812
-        y: 120.25781
+        x: 275.20312
+        y: 180.78125
         width: 100
         height: 16
       isBreakpoint: 0
@@ -6048,9 +6048,218 @@ MonoBehaviour:
         - manualUI
         paramDataPos: 00000000000000000000000000000000010000000000000001000000
         paramByteDataSize: 00000000000000000000000000000000000000000100000001000000
+    - name: Paused
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 105.61719
+        y: 183.79688
+        width: 111
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
+    - name: StartGame
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 467.0703
+        y: 114.82031
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Broadcast event diagonala
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SetBoolValue
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 27fbe103
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: GameHasStarted
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 110000001100000001000000
+        paramName:
+        - boolVariable
+        - boolValue
+        - everyFrame
+        paramDataPos: 000000000100000000000000
+        paramByteDataSize: 000000000000000001000000
+    - name: Unpaused
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 50.273438
+        y: 286.0547
+        width: 127
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: ResumeGame
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Waiting for input
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.BoolTest
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: a4c8bf00
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: GameHasStarted
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - ResumeGame
+        - 
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 11000000170000001700000001000000
+        paramName:
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        paramDataPos: 00000000000000000100000000000000
+        paramByteDataSize: 00000000000000000000000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
+      isGlobal: 0
+    - name: PausedGlobal
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: ResumeGame
+      isSystemEvent: 0
       isGlobal: 0
     - name: StartDiagonala
       isSystemEvent: 0
@@ -6073,30 +6282,55 @@ MonoBehaviour:
     - name: StartStakaLocal
       isSystemEvent: 0
       isGlobal: 0
+    - name: UnpausedGlobal
+      isSystemEvent: 0
+      isGlobal: 1
     - name: Win
       isSystemEvent: 0
       isGlobal: 1
     globalTransitions:
     - fsmEvent:
-        name: StartGame
+        name: Win
         isSystemEvent: 0
         isGlobal: 1
-      toState: Broadcast event diagonala
+      toState: Reset
       linkStyle: 0
       linkConstraint: 0
       colorIndex: 0
     - fsmEvent:
-        name: Win
+        name: PausedGlobal
         isSystemEvent: 0
         isGlobal: 1
       toState: Paused
       linkStyle: 0
       linkConstraint: 0
       colorIndex: 0
+    - fsmEvent:
+        name: StartGame
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: StartGame
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
+    - fsmEvent:
+        name: UnpausedGlobal
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: Unpaused
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
     variables:
       floatVariables: []
       intVariables: []
-      boolVariables: []
+      boolVariables:
+      - useVariable: 1
+        name: GameHasStarted
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
       stringVariables: []
       vector2Variables: []
       vector3Variables: []
@@ -6111,7 +6345,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 
+      variableCategoryIDs: 00000000
     description: 
     docUrl: 
     showStateLabel: 0
