@@ -2838,7 +2838,7 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
     name: FSM
-    startState: Broadcast event diagonala
+    startState: Waiting to start game
     states:
     - name: Waiting for input
       description: 
@@ -3660,6 +3660,58 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 00000000000000000000000000000000
         paramByteDataSize: 00000000000000000000000001000000
+    - name: Waiting to start game
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 57.757812
+        y: 120.25781
+        width: 158
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -3670,6 +3722,9 @@ MonoBehaviour:
     - name: StartDiagonalaLocal
       isSystemEvent: 0
       isGlobal: 0
+    - name: StartGame
+      isSystemEvent: 0
+      isGlobal: 1
     - name: StartSitting
       isSystemEvent: 0
       isGlobal: 1
@@ -3682,7 +3737,15 @@ MonoBehaviour:
     - name: StartStakaLocal
       isSystemEvent: 0
       isGlobal: 0
-    globalTransitions: []
+    globalTransitions:
+    - fsmEvent:
+        name: StartGame
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: Broadcast event diagonala
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
     variables:
       floatVariables: []
       intVariables: []
@@ -5170,14 +5233,14 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
     name: FSM
-    startState: Setting drag
+    startState: Waiting to start game
     states:
     - name: Waiting for input Diagonala
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 263.82812
+        x: 535.8281
         y: 175.85156
         width: 189
         height: 32
@@ -5301,7 +5364,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 937.0781
+        x: 1209.0781
         y: 138.19531
         width: 176
         height: 32
@@ -5567,7 +5630,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 941.0703
+        x: 1213.0703
         y: 197.39844
         width: 177
         height: 32
@@ -5833,7 +5896,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 606.6719
+        x: 878.6719
         y: 110.640625
         width: 221
         height: 48
@@ -5951,7 +6014,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 273.6328
+        x: 545.6328
         y: 369.83594
         width: 165
         height: 32
@@ -6075,7 +6138,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1071.9141
+        x: 1343.9141
         y: 381
         width: 143
         height: 32
@@ -6351,7 +6414,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 644.28125
+        x: 916.28125
         y: 325.14062
         width: 142
         height: 48
@@ -6468,7 +6531,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 855.21875
+        x: 1127.2188
         y: 408.73438
         width: 142
         height: 32
@@ -6567,7 +6630,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 610.4297
+        x: 882.4297
         y: 205.04688
         width: 202
         height: 48
@@ -6684,7 +6747,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 275.26562
+        x: 547.2656
         y: 578.6953
         width: 201
         height: 32
@@ -6771,7 +6834,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 639.90625
+        x: 911.90625
         y: 578.7344
         width: 125
         height: 16
@@ -6954,7 +7017,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 54.046875
+        x: 326.04688
         y: 173.36719
         width: 118
         height: 32
@@ -7085,7 +7148,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 59.648438
+        x: 331.64844
         y: 357.08594
         width: 114
         height: 32
@@ -7211,6 +7274,58 @@ MonoBehaviour:
         - manualUI
         paramDataPos: 00000000000000000000000000000000010000000000000001000000
         paramByteDataSize: 00000000000000000000000000000000000000000100000001000000
+    - name: Waiting to start game
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 52.289062
+        y: 247.38281
+        width: 158
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -7228,6 +7343,9 @@ MonoBehaviour:
       isSystemEvent: 0
       isGlobal: 0
     - name: StartDiagonala
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: StartGame
       isSystemEvent: 0
       isGlobal: 1
     - name: StartSitting
@@ -7266,6 +7384,14 @@ MonoBehaviour:
         isSystemEvent: 0
         isGlobal: 1
       toState: Set state sitting
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
+    - fsmEvent:
+        name: StartGame
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: Setting drag
       linkStyle: 0
       linkConstraint: 0
       colorIndex: 0
