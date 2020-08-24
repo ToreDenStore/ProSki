@@ -18,7 +18,7 @@ public class SpeedTextController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         float currentSpeedForward = Mathf.Sqrt(Mathf.Pow(Mathf.Max(0, rb.velocity.x), 2) + Mathf.Pow(Mathf.Max(0, rb.velocity.y), 2));
         speedTextElement.SetText("Speed: " + Mathf.RoundToInt(currentSpeedForward));
