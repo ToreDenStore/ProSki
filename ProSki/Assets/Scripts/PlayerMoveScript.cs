@@ -24,7 +24,7 @@ public class PlayerMoveScript : MonoBehaviour
     {
         float currentSpeedForward = Mathf.Sqrt(Mathf.Pow(Mathf.Max(0, rb.velocity.x), 2) + Mathf.Pow(Mathf.Max(0, rb.velocity.y), 2));
 
-        float factor = (maxSpeed - currentSpeedForward) / maxSpeed;
+        float factor = Mathf.Sqrt(Mathf.Max((maxSpeed - currentSpeedForward), 0) / maxSpeed);
 
         print("Staka force factor: " + factor);
 

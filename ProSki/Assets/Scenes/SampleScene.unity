@@ -1156,7 +1156,7 @@ MonoBehaviour:
   finishBlock: {fileID: 5736200327082544310, guid: 45c1023499c7faf4eab3d818cefaf529,
     type: 3}
   numberOfBlocks: 20
-  seed: 1
+  seed: 23543
   baseWidth: 20
   baseHeight: 2
 --- !u!1 &352530879
@@ -8313,7 +8313,7 @@ MonoBehaviour:
           objectType: UnityEngine.Object
           useVariable: 0
           type: 0
-          floatValue: 8
+          floatValue: 7
           intValue: 0
           boolValue: 0
           stringValue: 
@@ -8337,7 +8337,7 @@ MonoBehaviour:
           objectType: UnityEngine.Object
           useVariable: 0
           type: 0
-          floatValue: 700
+          floatValue: 350
           intValue: 0
           boolValue: 0
           stringValue: 
@@ -8579,7 +8579,7 @@ MonoBehaviour:
           objectType: UnityEngine.Object
           useVariable: 0
           type: 0
-          floatValue: 8
+          floatValue: 7
           intValue: 0
           boolValue: 0
           stringValue: 
@@ -8603,7 +8603,7 @@ MonoBehaviour:
           objectType: UnityEngine.Object
           useVariable: 0
           type: 0
-          floatValue: 700
+          floatValue: 350
           intValue: 0
           boolValue: 0
           stringValue: 
@@ -9101,7 +9101,7 @@ MonoBehaviour:
           objectType: UnityEngine.Object
           useVariable: 0
           type: 0
-          floatValue: 15
+          floatValue: 14
           intValue: 0
           boolValue: 0
           stringValue: 
@@ -9125,7 +9125,7 @@ MonoBehaviour:
           objectType: UnityEngine.Object
           useVariable: 0
           type: 0
-          floatValue: 350
+          floatValue: 220
           intValue: 0
           boolValue: 0
           stringValue: 
@@ -9936,7 +9936,7 @@ MonoBehaviour:
           objectType: UnityEngine.Object
           useVariable: 0
           type: 0
-          floatValue: 0.3
+          floatValue: 0.2
           intValue: 0
           boolValue: 0
           stringValue: 
@@ -10067,7 +10067,7 @@ MonoBehaviour:
           objectType: UnityEngine.Object
           useVariable: 0
           type: 0
-          floatValue: 0.1
+          floatValue: 0.2
           intValue: 0
           boolValue: 0
           stringValue: 
