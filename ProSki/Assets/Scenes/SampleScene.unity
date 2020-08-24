@@ -473,7 +473,7 @@ GameObject:
   m_Component:
   - component: {fileID: 64663187}
   - component: {fileID: 64663188}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Right ski
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2601,7 +2601,7 @@ GameObject:
   m_Component:
   - component: {fileID: 510618322}
   - component: {fileID: 510618323}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Left ski
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9201,7 +9201,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 0101010101010101
-        actionIsOpen: 0000000100000000
+        actionIsOpen: 0000000100010000
         actionStartIndex: 00000000050000000a0000000d000000160000001e0000002200000026000000
         actionHashCodes: 5f913504c34b410532d59402ca51e900d596ab022a6e8a0052cb520348c01101
         unityObjectParams: []
@@ -9309,7 +9309,7 @@ MonoBehaviour:
           objectType: UnityEngine.Object
           useVariable: 0
           type: 0
-          floatValue: 220
+          floatValue: 230
           intValue: 0
           boolValue: 0
           stringValue: 
@@ -9415,7 +9415,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 6
+          value: 5.5
         - useVariable: 1
           name: ArmsFatigueLocal
           tooltip: 
@@ -10511,7 +10511,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 010101010101010101
-        actionIsOpen: 000000000000000000
+        actionIsOpen: 000001000000000000
         actionStartIndex: 0000000003000000060000000f000000170000001b0000001f0000002300000027000000
         actionHashCodes: 32d5940232d59402ca51e900d596ab022a6e8a002a6e8a0052cb520352cb520348c01101
         unityObjectParams: []
