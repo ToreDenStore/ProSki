@@ -277,6 +277,109 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 10322148}
   m_CullTransparentMesh: 0
+--- !u!1 &11603139
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 11603140}
+  - component: {fileID: 11603141}
+  - component: {fileID: 11603143}
+  m_Layer: 5
+  m_Name: ArmsFatigueBar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &11603140
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11603139}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 832082506}
+  - {fileID: 126711753}
+  m_Father: {fileID: 140835996}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -900, y: 243}
+  m_SizeDelta: {x: 232.96948, y: 52.783386}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &11603141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11603139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 0
+  m_Colors:
+    m_NormalColor: {r: 0, g: 1, b: 0.28511524, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.018630855, b: 0, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 0
+  m_TargetGraphic: {fileID: 0}
+  m_FillRect: {fileID: 1640645825}
+  m_HandleRect: {fileID: 0}
+  m_Direction: 0
+  m_MinValue: 0
+  m_MaxValue: 100
+  m_WholeNumbers: 0
+  m_Value: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &11603143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11603139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef69349c7bfdb3b46b3dbb916a86e85a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 11603141}
+  decreasePerSecond: 3
 --- !u!1 &20056725
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,7 +486,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 64663186}
-  m_LocalRotation: {x: 0, y: 0, z: 0.18155614, w: 0.9833806}
+  m_LocalRotation: {x: 0, y: 0, z: 0.14081009, w: 0.9900367}
   m_LocalPosition: {x: 0.48929197, y: -0.08503622, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -487,6 +590,80 @@ PolygonCollider2D:
       - {x: 3.516624, y: 0.33234495}
       - {x: 3.531183, y: 0.40528828}
       - {x: 3.5396452, y: 0.50686634}
+--- !u!1 &70788361
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 70788362}
+  - component: {fileID: 70788364}
+  - component: {fileID: 70788363}
+  m_Layer: 5
+  m_Name: Fill
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &70788362
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70788361}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1144622947}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -2.5021973, y: 0}
+  m_SizeDelta: {x: 5.00441, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &70788363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70788361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8584906, g: 0.7796968, b: 0.3037113, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &70788364
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70788361}
+  m_CullTransparentMesh: 0
 --- !u!1001 &75310126
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -809,6 +986,42 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 119280030}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &126711752
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 126711753}
+  m_Layer: 5
+  m_Name: Fill Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &126711753
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126711752}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1640645825}
+  m_Father: {fileID: 11603140}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: 2.5, y: 0.000022888184}
+  m_SizeDelta: {x: -4.9999847, y: 26.391895}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &138547131
 GameObject:
   m_ObjectHideFlags: 0
@@ -832,13 +1045,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 138547131}
-  m_LocalRotation: {x: -0, y: -0, z: -0.12736219, w: 0.99185634}
+  m_LocalRotation: {x: -0, y: -0, z: -0.01111339, w: 0.99993825}
   m_LocalPosition: {x: 0.691, y: -0.007, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 581164107}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -14.634001}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.274}
 --- !u!1 &140835992
 GameObject:
   m_ObjectHideFlags: 0
@@ -938,6 +1151,8 @@ RectTransform:
   - {fileID: 398824538}
   - {fileID: 462728593}
   - {fileID: 1909149890}
+  - {fileID: 11603140}
+  - {fileID: 1799726172}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2367,7 +2582,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 482171055}
-  m_LocalRotation: {x: 0, y: 0, z: -0.88520736, w: 0.4651966}
+  m_LocalRotation: {x: 0, y: 0, z: -0.999961, w: 0.008833643}
   m_LocalPosition: {x: -0.012983995, y: -0.11642344, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2399,7 +2614,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 510618321}
-  m_LocalRotation: {x: 0, y: 0, z: 0.24243155, w: 0.9701686}
+  m_LocalRotation: {x: 0, y: 0, z: 0.13636218, w: 0.99065906}
   m_LocalPosition: {x: 0.5847228, y: -0.049357235, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -4055,7 +4270,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 581164106}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7376139, w: 0.6752227}
+  m_LocalRotation: {x: 0, y: 0, z: 0.01640614, w: 0.9998654}
   m_LocalPosition: {x: 0.6644791, y: 0.00034704804, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -4574,13 +4789,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 751720897}
-  m_LocalRotation: {x: -0, y: -0, z: 0.33559397, w: 0.9420067}
+  m_LocalRotation: {x: -0, y: -0, z: 0.000076688804, w: 1}
   m_LocalPosition: {x: 0.867, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 997246684}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 39.217003}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.009000001}
 --- !u!1 &759878654
 GameObject:
   m_ObjectHideFlags: 0
@@ -5107,13 +5322,87 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 768699678}
-  m_LocalRotation: {x: -0, y: -0, z: 0.019830287, w: 0.9998034}
+  m_LocalRotation: {x: -0, y: -0, z: -0.010391272, w: 0.99994606}
   m_LocalPosition: {x: 0.719, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1101073939}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 362.273}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 358.809}
+--- !u!1 &832082505
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 832082506}
+  - component: {fileID: 832082508}
+  - component: {fileID: 832082507}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &832082506
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832082505}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 11603140}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: 0, y: -0.00005340576}
+  m_SizeDelta: {x: -0.00010681152, y: 26.391777}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &832082507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832082505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.41960785}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &832082508
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832082505}
+  m_CullTransparentMesh: 0
 --- !u!1 &855013994
 GameObject:
   m_ObjectHideFlags: 0
@@ -6518,7 +6807,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 904788216}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7749643, w: 0.63200516}
+  m_LocalRotation: {x: 0, y: 0, z: 0.61765397, w: 0.78644997}
   m_LocalPosition: {x: 0.85737365, y: 0.010970056, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6526,6 +6815,80 @@ Transform:
   m_Father: {fileID: 997246684}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 70.067}
+--- !u!1 &968528858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 968528859}
+  - component: {fileID: 968528861}
+  - component: {fileID: 968528860}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &968528859
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968528858}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1799726172}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: 0, y: -0.00005340576}
+  m_SizeDelta: {x: -0.00010681152, y: 26.391777}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &968528860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968528858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.41960785}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &968528861
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968528858}
+  m_CullTransparentMesh: 0
 --- !u!1 &997246683
 GameObject:
   m_ObjectHideFlags: 0
@@ -6549,7 +6912,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 997246683}
-  m_LocalRotation: {x: 0, y: 0, z: -0.3711771, w: 0.92856216}
+  m_LocalRotation: {x: 0, y: 0, z: -0.0113894, w: 0.9999352}
   m_LocalPosition: {x: 0.82243943, y: -0.0025283284, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6680,7 +7043,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1101073938}
-  m_LocalRotation: {x: 0, y: 0, z: 0.73014414, w: 0.6832932}
+  m_LocalRotation: {x: 0, y: 0, z: 0.019127896, w: 0.9998171}
   m_LocalPosition: {x: 0.67474455, y: 0.011335256, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6689,6 +7052,42 @@ Transform:
   m_Father: {fileID: 1279777204}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1144622946
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1144622947}
+  m_Layer: 5
+  m_Name: Fill Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1144622947
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144622946}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 70788362}
+  m_Father: {fileID: 1799726172}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: 2.5, y: 0.000022888184}
+  m_SizeDelta: {x: -4.9999847, y: 26.391895}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1156101796
 GameObject:
   m_ObjectHideFlags: 0
@@ -6765,7 +7164,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1161500054}
-  m_LocalRotation: {x: 0, y: 0, z: -0.9437811, w: -0.33057117}
+  m_LocalRotation: {x: 0, y: 0, z: -0.9999944, w: -0.0033487072}
   m_LocalPosition: {x: 1.413353, y: 0.43150175, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -7125,13 +7524,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1214441083}
-  m_LocalRotation: {x: -0, y: -0, z: 0.35125354, w: 0.93628037}
+  m_LocalRotation: {x: -0, y: -0, z: 0.0002832976, w: 1}
   m_LocalPosition: {x: 0.853, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1635043861}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 41.128002}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.032}
 --- !u!1 &1268772383
 GameObject:
   m_ObjectHideFlags: 0
@@ -7392,7 +7791,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1279777203}
-  m_LocalRotation: {x: 0, y: 0, z: -0.88976854, w: -0.456412}
+  m_LocalRotation: {x: 0, y: 0, z: -0.99997336, w: -0.007300679}
   m_LocalPosition: {x: 1.4293027, y: -0.41736042, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -7748,7 +8147,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1635043860}
-  m_LocalRotation: {x: 0, y: 0, z: -0.45789775, w: 0.8890049}
+  m_LocalRotation: {x: 0, y: 0, z: -0.0049494966, w: 0.9999878}
   m_LocalPosition: {x: 0.8107235, y: -0.0033859704, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -7757,6 +8156,80 @@ Transform:
   m_Father: {fileID: 482171056}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1640645824
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1640645825}
+  - component: {fileID: 1640645827}
+  - component: {fileID: 1640645826}
+  m_Layer: 5
+  m_Name: Fill
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1640645825
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640645824}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 126711753}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -2.5021973, y: 0}
+  m_SizeDelta: {x: 5.00441, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1640645826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640645824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8584906, g: 0.7796968, b: 0.3037113, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1640645827
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640645824}
+  m_CullTransparentMesh: 0
 --- !u!1 &1655752859
 GameObject:
   m_ObjectHideFlags: 0
@@ -7986,8 +8459,8 @@ MonoBehaviour:
   - {fileID: 2122257975}
   - {fileID: 64663187}
   m_Bounds:
-    m_Center: {x: -1.5101318, y: 1.1803331, z: 0}
-    m_Extent: {x: 3.9762707, y: 2.0576153, z: 0}
+    m_Center: {x: -1.0998235, y: 1.4967515, z: 0}
+    m_Extent: {x: 3.922956, y: 2.348249, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!212 &1708116786
@@ -8105,8 +8578,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 535.8281
-        y: 175.85156
+        x: 490.60156
+        y: 183.53125
         width: 189
         height: 32
       isBreakpoint: 0
@@ -8224,55 +8697,41 @@ MonoBehaviour:
         - storeResult
         paramDataPos: 00000000000000000000000000000000010000000500000001000000090000000200000000000000010000000a0000000b0000000200000003000000
         paramByteDataSize: 000000000000000000000000010000000400000004000000000000000100000000000000000000000000000001000000040000000000000000000000
-    - name: Adding force diagonala 1
+    - name: Play animation diagonala 1
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1209.0781
-        y: 138.19531
-        width: 176
+        x: 1248.9062
+        y: 104.21875
+        width: 184
         height: 32
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
       transitions:
       - fsmEvent:
-          name: Staka finished
-          isSystemEvent: 0
+          name: FINISHED
+          isSystemEvent: 1
           isGlobal: 0
-        toState: Continue animation diagonala
+        toState: Diagonala
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.CallMethod
-        - HutongGames.PlayMaker.Actions.AddForce2d
         - HutongGames.PlayMaker.Actions.AnimatorPlay
         - HutongGames.PlayMaker.Actions.SetIntValue
-        - HutongGames.PlayMaker.Actions.Wait
         customNames:
         - 
         - 
-        - 
-        - 
-        - 
-        actionEnabled: 0101010101
-        actionIsOpen: 0101010101
-        actionStartIndex: 0000000008000000100000001500000018000000
-        actionHashCodes: ca51e900d596ab02c34b4105603dd90548c01101
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000005000000
+        actionHashCodes: c34b4105603dd905
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
-        - ownerOption: 0
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
         - ownerOption: 0
           gameObject:
             useVariable: 0
@@ -8293,94 +8752,9 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: GetForce
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
           value: Diagonala
-        fsmObjectParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          typeName: PlayerMoveScript
-          value: {fileID: 1708116792}
-        fsmVarParams:
-        - variableName: 
-          objectType: UnityEngine.Object
-          useVariable: 0
-          type: 0
-          floatValue: 7
-          intValue: 0
-          boolValue: 0
-          stringValue: 
-          vector4Value: {x: 0, y: 0, z: 0, w: 0}
-          objectReference: {fileID: 0}
-          arrayValue:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            type: -1
-            objectTypeName: 
-            floatValues: []
-            intValues: 
-            boolValues: 
-            stringValues: []
-            vector4Values: []
-            objectReferences: []
-        - variableName: 
-          objectType: UnityEngine.Object
-          useVariable: 0
-          type: 0
-          floatValue: 350
-          intValue: 0
-          boolValue: 0
-          stringValue: 
-          vector4Value: {x: 0, y: 0, z: 0, w: 0}
-          objectReference: {fileID: 0}
-          arrayValue:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            type: -1
-            objectTypeName: 
-            floatValues: []
-            intValues: 
-            boolValues: 
-            stringValues: []
-            vector4Values: []
-            objectReferences: []
-        - variableName: ForceStaka
-          objectType: UnityEngine.Object
-          useVariable: 1
-          type: 5
-          floatValue: 0
-          intValue: 0
-          boolValue: 0
-          stringValue: 
-          vector4Value: {x: 0, y: 0, z: 0, w: 0}
-          objectReference: {fileID: 0}
-          arrayValue:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            type: -1
-            objectTypeName: 
-            floatValues: []
-            intValues: 
-            boolValues: 
-            stringValues: []
-            vector4Values: []
-            objectReferences: []
+        fsmObjectParams: []
+        fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
         fsmFloatParams:
@@ -8389,25 +8763,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 500
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
           value: 0
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0.5
         fsmIntParams:
         - useVariable: 1
           name: 
@@ -8428,55 +8784,19 @@ MonoBehaviour:
           networkSync: 0
           value: 2
         fsmBoolParams: []
-        fsmVector2Params:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {x: 0, y: 0}
-        - useVariable: 1
-          name: ForceStaka
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {x: 0, y: 0}
-        fsmVector3Params:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {x: 0, y: 0, z: 0}
+        fsmVector2Params: []
+        fsmVector3Params: []
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
-        stringParams:
-        - Staka finished
-        byteData: 00000000000001000001
-        arrayParamSizes: 02000000
-        arrayParamTypes:
-        - HutongGames.PlayMaker.FsmVar
+        stringParams: []
+        byteData: 0000
+        arrayParamSizes: 
+        arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 18000000120000000c0000002700000027000000270000000100000001000000140000000700000025000000250000000f0000000f0000001c000000010000001400000012000000100000000f000000010000001000000010000000010000000f0000001700000001000000
+        paramDataType: 1400000012000000100000000f00000001000000100000001000000001000000
         paramName:
-        - behaviour
-        - methodName
-        - parameters
-        - 
-        - 
-        - storeResult
-        - everyFrame
-        - manualUI
-        - gameObject
-        - forceMode
-        - atPosition
-        - vector
-        - x
-        - y
-        - vector3
-        - everyFrame
         - gameObject
         - stateName
         - layer
@@ -8485,60 +8805,43 @@ MonoBehaviour:
         - intVariable
         - intValue
         - everyFrame
-        - time
-        - finishEvent
-        - realTime
-        paramDataPos: 000000000000000000000000000000000100000002000000000000000100000000000000020000000000000001000000000000000100000000000000060000000100000001000000000000000200000007000000010000000200000008000000030000000000000009000000
-        paramByteDataSize: 000000000000000000000000000000000000000000000000010000000100000000000000040000000000000000000000000000000000000000000000010000000000000000000000000000000000000001000000000000000000000001000000000000000000000001000000
-    - name: Adding force diagonala 2
+        paramDataPos: 0000000000000000000000000000000000000000010000000200000001000000
+        paramByteDataSize: 0000000000000000000000000000000001000000000000000000000001000000
+    - name: Play animation diagonala 2
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1213.0703
-        y: 197.39844
-        width: 177
+        x: 1255.2344
+        y: 165.65625
+        width: 185
         height: 32
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
       transitions:
       - fsmEvent:
-          name: Staka finished
-          isSystemEvent: 0
+          name: FINISHED
+          isSystemEvent: 1
           isGlobal: 0
-        toState: Continue animation diagonala
+        toState: Diagonala
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.CallMethod
-        - HutongGames.PlayMaker.Actions.AddForce2d
         - HutongGames.PlayMaker.Actions.AnimatorPlay
         - HutongGames.PlayMaker.Actions.SetIntValue
-        - HutongGames.PlayMaker.Actions.Wait
         customNames:
         - 
         - 
-        - 
-        - 
-        - 
-        actionEnabled: 0101010101
-        actionIsOpen: 0101010101
-        actionStartIndex: 0000000008000000100000001500000018000000
-        actionHashCodes: ca51e900d596ab02c34b4105603dd90548c01101
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000005000000
+        actionHashCodes: c34b4105603dd905
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
-        - ownerOption: 0
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
         - ownerOption: 0
           gameObject:
             useVariable: 0
@@ -8559,94 +8862,9 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: GetForce
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
           value: Diagonala2
-        fsmObjectParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          typeName: PlayerMoveScript
-          value: {fileID: 1708116792}
-        fsmVarParams:
-        - variableName: 
-          objectType: UnityEngine.Object
-          useVariable: 0
-          type: 0
-          floatValue: 7
-          intValue: 0
-          boolValue: 0
-          stringValue: 
-          vector4Value: {x: 0, y: 0, z: 0, w: 0}
-          objectReference: {fileID: 0}
-          arrayValue:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            type: -1
-            objectTypeName: 
-            floatValues: []
-            intValues: 
-            boolValues: 
-            stringValues: []
-            vector4Values: []
-            objectReferences: []
-        - variableName: 
-          objectType: UnityEngine.Object
-          useVariable: 0
-          type: 0
-          floatValue: 350
-          intValue: 0
-          boolValue: 0
-          stringValue: 
-          vector4Value: {x: 0, y: 0, z: 0, w: 0}
-          objectReference: {fileID: 0}
-          arrayValue:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            type: -1
-            objectTypeName: 
-            floatValues: []
-            intValues: 
-            boolValues: 
-            stringValues: []
-            vector4Values: []
-            objectReferences: []
-        - variableName: ForceStaka
-          objectType: UnityEngine.Object
-          useVariable: 1
-          type: 5
-          floatValue: 0
-          intValue: 0
-          boolValue: 0
-          stringValue: 
-          vector4Value: {x: 0, y: 0, z: 0, w: 0}
-          objectReference: {fileID: 0}
-          arrayValue:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            type: -1
-            objectTypeName: 
-            floatValues: []
-            intValues: 
-            boolValues: 
-            stringValues: []
-            vector4Values: []
-            objectReferences: []
+        fsmObjectParams: []
+        fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
         fsmFloatParams:
@@ -8655,25 +8873,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 500
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
           value: 0
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0.5
         fsmIntParams:
         - useVariable: 1
           name: 
@@ -8694,55 +8894,19 @@ MonoBehaviour:
           networkSync: 0
           value: 1
         fsmBoolParams: []
-        fsmVector2Params:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {x: 0, y: 0}
-        - useVariable: 1
-          name: ForceStaka
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {x: 0, y: 0}
-        fsmVector3Params:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {x: 0, y: 0, z: 0}
+        fsmVector2Params: []
+        fsmVector3Params: []
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
-        stringParams:
-        - Staka finished
-        byteData: 00000000000001000001
-        arrayParamSizes: 02000000
-        arrayParamTypes:
-        - HutongGames.PlayMaker.FsmVar
+        stringParams: []
+        byteData: 0000
+        arrayParamSizes: 
+        arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 18000000120000000c0000002700000027000000270000000100000001000000140000000700000025000000250000000f0000000f0000001c000000010000001400000012000000100000000f000000010000001000000010000000010000000f0000001700000001000000
+        paramDataType: 1400000012000000100000000f00000001000000100000001000000001000000
         paramName:
-        - behaviour
-        - methodName
-        - parameters
-        - 
-        - 
-        - storeResult
-        - everyFrame
-        - manualUI
-        - gameObject
-        - forceMode
-        - atPosition
-        - vector
-        - x
-        - y
-        - vector3
-        - everyFrame
         - gameObject
         - stateName
         - layer
@@ -8751,18 +8915,15 @@ MonoBehaviour:
         - intVariable
         - intValue
         - everyFrame
-        - time
-        - finishEvent
-        - realTime
-        paramDataPos: 000000000000000000000000000000000100000002000000000000000100000000000000020000000000000001000000000000000100000000000000060000000100000001000000000000000200000007000000010000000200000008000000030000000000000009000000
-        paramByteDataSize: 000000000000000000000000000000000000000000000000010000000100000000000000040000000000000000000000000000000000000000000000010000000000000000000000000000000000000001000000000000000000000001000000000000000000000001000000
+        paramDataPos: 0000000000000000000000000000000000000000010000000200000001000000
+        paramByteDataSize: 0000000000000000000000000000000001000000000000000000000001000000
     - name: Checking which diagonala to use
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
         x: 878.6719
-        y: 110.640625
+        y: 126.640625
         width: 221
         height: 48
       isBreakpoint: 0
@@ -8773,7 +8934,7 @@ MonoBehaviour:
           name: Diagonala1
           isSystemEvent: 0
           isGlobal: 0
-        toState: Adding force diagonala 1
+        toState: Play animation diagonala 1
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -8781,7 +8942,7 @@ MonoBehaviour:
           name: Diagonala2
           isSystemEvent: 0
           isGlobal: 0
-        toState: Adding force diagonala 2
+        toState: Play animation diagonala 2
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -8880,7 +9041,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 545.6328
-        y: 369.83594
+        y: 385.83594
         width: 165
         height: 32
       isBreakpoint: 0
@@ -9004,7 +9165,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 1343.9141
-        y: 381
+        y: 397
         width: 143
         height: 32
       isBreakpoint: 0
@@ -9025,6 +9186,9 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.AddForce2d
         - HutongGames.PlayMaker.Actions.SetAnimatorBool
         - HutongGames.PlayMaker.Actions.AnimatorPlay
+        - HutongGames.PlayMaker.Actions.UiSliderGetValue
+        - HutongGames.PlayMaker.Actions.FloatAdd
+        - HutongGames.PlayMaker.Actions.UiSliderSetValue
         - HutongGames.PlayMaker.Actions.Wait
         customNames:
         - 
@@ -9032,10 +9196,13 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 0101010101
-        actionIsOpen: 0101010101
-        actionStartIndex: 000000000800000010000000150000001a000000
-        actionHashCodes: ca51e900d596ab025f913504c34b410548c01101
+        - 
+        - 
+        - 
+        actionEnabled: 0101010101010101
+        actionIsOpen: 0000000001010101
+        actionStartIndex: 000000000800000010000000150000001a0000001d0000002100000025000000
+        actionHashCodes: ca51e900d596ab025f913504c34b410532d594022a6e8a0052cb520348c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -9063,6 +9230,22 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 0}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 11603139}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 11603139}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -9190,6 +9373,30 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 1
+          name: ArmsFatigueLocal
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: ArmsFatigueLocal
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 6
+        - useVariable: 1
+          name: ArmsFatigueLocal
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         - useVariable: 0
           name: 
           tooltip: 
@@ -9204,6 +9411,12 @@ MonoBehaviour:
           networkSync: 0
           value: 0
         fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         - useVariable: 0
           name: 
           tooltip: 
@@ -9235,13 +9448,13 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - Staka finished
-        byteData: 0000000000000100000000000001
+        byteData: 000000000000010000000000000000000001
         arrayParamSizes: 02000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmVar
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 18000000120000000c0000002700000027000000270000000100000001000000140000000700000025000000250000000f0000000f0000001c0000000100000014000000120000001100000001000000070000001400000012000000100000000f000000010000000f0000001700000001000000
+        paramDataType: 18000000120000000c0000002700000027000000270000000100000001000000140000000700000025000000250000000f0000000f0000001c0000000100000014000000120000001100000001000000070000001400000012000000100000000f00000001000000140000000f000000010000000f0000000f0000000100000001000000140000000f00000011000000010000000f0000001700000001000000
         paramName:
         - behaviour
         - methodName
@@ -9269,18 +9482,29 @@ MonoBehaviour:
         - layer
         - normalizedTime
         - everyFrame
+        - gameObject
+        - value
+        - everyFrame
+        - floatVariable
+        - add
+        - everyFrame
+        - perSecond
+        - gameObject
+        - value
+        - resetOnExit
+        - everyFrame
         - time
         - finishEvent
         - realTime
-        paramDataPos: 000000000000000000000000000000000100000002000000000000000100000000000000020000000000000001000000000000000100000000000000060000000100000001000000000000000700000008000000020000000200000000000000020000000c00000003000000000000000d000000
-        paramByteDataSize: 0000000000000000000000000000000000000000000000000100000001000000000000000400000000000000000000000000000000000000000000000100000000000000000000000000000001000000040000000000000000000000000000000000000001000000000000000000000001000000
+        paramDataPos: 000000000000000000000000000000000100000002000000000000000100000000000000020000000000000001000000000000000100000000000000060000000100000001000000000000000700000008000000020000000200000000000000020000000c00000003000000030000000d00000004000000050000000e0000000f00000004000000060000000100000010000000070000000000000011000000
+        paramByteDataSize: 00000000000000000000000000000000000000000000000001000000010000000000000004000000000000000000000000000000000000000000000001000000000000000000000000000000010000000400000000000000000000000000000000000000010000000000000000000000010000000000000000000000010000000100000000000000000000000000000001000000000000000000000001000000
     - name: Continue animation
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
         x: 916.28125
-        y: 325.14062
+        y: 341.14062
         width: 142
         height: 48
       isBreakpoint: 0
@@ -9397,7 +9621,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 1127.2188
-        y: 408.73438
+        y: 424.73438
         width: 142
         height: 32
       isBreakpoint: 0
@@ -9496,7 +9720,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 882.4297
-        y: 205.04688
+        y: 221.04688
         width: 202
         height: 48
       isBreakpoint: 0
@@ -9613,7 +9837,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 547.2656
-        y: 578.6953
+        y: 594.6953
         width: 201
         height: 32
       isBreakpoint: 0
@@ -9700,7 +9924,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 911.90625
-        y: 578.7344
+        y: 594.7344
         width: 125
         height: 16
       isBreakpoint: 0
@@ -9882,8 +10106,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 326.04688
-        y: 173.36719
+        x: 215.34375
+        y: 183.42188
         width: 118
         height: 32
       isBreakpoint: 0
@@ -10014,7 +10238,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 331.64844
-        y: 357.08594
+        y: 373.08594
         width: 114
         height: 32
       isBreakpoint: 0
@@ -10145,7 +10369,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 52.289062
-        y: 247.38281
+        y: 263.3828
         width: 100
         height: 16
       isBreakpoint: 0
@@ -10218,6 +10442,348 @@ MonoBehaviour:
         - everyFrameOption
         paramDataPos: 0000000000000000000000000000000001000000
         paramByteDataSize: 0000000000000000000000000100000004000000
+    - name: Diagonala
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 1514
+        y: 209
+        width: 114
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: Staka finished
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Continue animation diagonala
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.CallMethod
+        - HutongGames.PlayMaker.Actions.AddForce2d
+        - HutongGames.PlayMaker.Actions.UiSliderGetValue
+        - HutongGames.PlayMaker.Actions.FloatAdd
+        - HutongGames.PlayMaker.Actions.UiSliderSetValue
+        - HutongGames.PlayMaker.Actions.UiSliderGetValue
+        - HutongGames.PlayMaker.Actions.FloatAdd
+        - HutongGames.PlayMaker.Actions.UiSliderSetValue
+        - HutongGames.PlayMaker.Actions.Wait
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 010101010101010101
+        actionIsOpen: 000001010101010101
+        actionStartIndex: 00000000080000001000000013000000170000001b0000001e0000002200000026000000
+        actionHashCodes: ca51e900d596ab0232d594022a6e8a0052cb520332d594022a6e8a0052cb520348c01101
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 11603139}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 11603139}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 1799726171}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 1799726171}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: GetForce
+        fsmObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          typeName: PlayerMoveScript
+          value: {fileID: 1708116792}
+        fsmVarParams:
+        - variableName: 
+          objectType: 
+          useVariable: 0
+          type: 0
+          floatValue: 7
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        - variableName: 
+          objectType: 
+          useVariable: 0
+          type: 0
+          floatValue: 350
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        - variableName: ForceStaka
+          objectType: UnityEngine.Object
+          useVariable: 1
+          type: 5
+          floatValue: 0
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 500
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: ArmsFatigueLocal
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: ArmsFatigueLocal
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 2
+        - useVariable: 1
+          name: ArmsFatigueLocal
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: LegsFatigueLocal
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: LegsFatigueLocal
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 4
+        - useVariable: 1
+          name: LegsFatigueLocal
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0.5
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0}
+        - useVariable: 1
+          name: ForceStaka
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0}
+        fsmVector3Params:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - Staka finished
+        byteData: 00000000000001000000000000000001
+        arrayParamSizes: 02000000
+        arrayParamTypes:
+        - HutongGames.PlayMaker.FsmVar
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 18000000120000000c0000002700000027000000270000000100000001000000140000000700000025000000250000000f0000000f0000001c00000001000000140000000f000000010000000f0000000f0000000100000001000000140000000f0000001100000001000000140000000f000000010000000f0000000f0000000100000001000000140000000f00000011000000010000000f0000001700000001000000
+        paramName:
+        - behaviour
+        - methodName
+        - parameters
+        - 
+        - 
+        - storeResult
+        - everyFrame
+        - manualUI
+        - gameObject
+        - forceMode
+        - atPosition
+        - vector
+        - x
+        - y
+        - vector3
+        - everyFrame
+        - gameObject
+        - value
+        - everyFrame
+        - floatVariable
+        - add
+        - everyFrame
+        - perSecond
+        - gameObject
+        - value
+        - resetOnExit
+        - everyFrame
+        - gameObject
+        - value
+        - everyFrame
+        - floatVariable
+        - add
+        - everyFrame
+        - perSecond
+        - gameObject
+        - value
+        - resetOnExit
+        - everyFrame
+        - time
+        - finishEvent
+        - realTime
+        paramDataPos: 00000000000000000000000000000000010000000200000000000000010000000000000002000000000000000100000000000000010000000000000006000000010000000200000007000000030000000400000008000000090000000200000005000000000000000a00000003000000060000000b00000007000000080000000c0000000d0000000400000009000000010000000e0000000a000000000000000f000000
+        paramByteDataSize: 0000000000000000000000000000000000000000000000000100000001000000000000000400000000000000000000000000000000000000000000000100000000000000000000000100000000000000000000000100000001000000000000000000000000000000010000000000000000000000010000000000000000000000010000000100000000000000000000000000000001000000000000000000000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -10299,7 +10865,19 @@ MonoBehaviour:
       linkConstraint: 0
       colorIndex: 0
     variables:
-      floatVariables: []
+      floatVariables:
+      - useVariable: 1
+        name: ArmsFatigueLocal
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: LegsFatigueLocal
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
       intVariables:
       - useVariable: 1
         name: DiagonalaAnimation
@@ -10334,7 +10912,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 000000000000000000000000
+      variableCategoryIDs: 0000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
@@ -10465,6 +11043,109 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 909faf960ca01b74b9273609f8442ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1799726171
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1799726172}
+  - component: {fileID: 1799726174}
+  - component: {fileID: 1799726175}
+  m_Layer: 5
+  m_Name: LegsFatigueBar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1799726172
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799726171}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 968528859}
+  - {fileID: 1144622947}
+  m_Father: {fileID: 140835996}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -900, y: -12}
+  m_SizeDelta: {x: 232.96948, y: 52.783386}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1799726174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799726171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 0
+  m_Colors:
+    m_NormalColor: {r: 0, g: 1, b: 0.28511524, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.018630855, b: 0, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 0
+  m_TargetGraphic: {fileID: 0}
+  m_FillRect: {fileID: 70788362}
+  m_HandleRect: {fileID: 0}
+  m_Direction: 0
+  m_MinValue: 0
+  m_MaxValue: 100
+  m_WholeNumbers: 0
+  m_Value: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1799726175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799726171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef69349c7bfdb3b46b3dbb916a86e85a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 1799726174}
+  decreasePerSecond: 3
 --- !u!1 &1837745520
 GameObject:
   m_ObjectHideFlags: 0
@@ -10570,13 +11251,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1845799951}
-  m_LocalRotation: {x: -0, y: -0, z: 0.0014446671, w: 0.9999989}
+  m_LocalRotation: {x: -0, y: -0, z: -0.011723575, w: 0.99993134}
   m_LocalPosition: {x: 2.45, y: -0.208, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 510618322}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.16600001}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.343}
 --- !u!1 &1909149889
 GameObject:
   m_ObjectHideFlags: 0
@@ -11297,13 +11978,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1935039083}
-  m_LocalRotation: {x: -0, y: -0, z: -0.000871405, w: 0.9999997}
+  m_LocalRotation: {x: -0, y: -0, z: -0.009380875, w: 0.9999561}
   m_LocalPosition: {x: 2.482, y: -0.138, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 64663187}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.075}
 --- !u!1 &1953397849
 GameObject:
   m_ObjectHideFlags: 0
@@ -11527,7 +12208,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2122257974}
-  m_LocalRotation: {x: 0, y: 0, z: 0.80779475, w: 0.5894639}
+  m_LocalRotation: {x: 0, y: 0, z: 0.59042025, w: 0.80709606}
   m_LocalPosition: {x: 0.8462511, y: -0.004447468, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -11558,7 +12239,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2142629841}
-  m_LocalRotation: {x: 0, y: 0, z: -0.9225011, w: 0.3859945}
+  m_LocalRotation: {x: 0, y: 0, z: -0.99997836, w: 0.0065892832}
   m_LocalPosition: {x: -0.014838198, y: 0.10618506, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
