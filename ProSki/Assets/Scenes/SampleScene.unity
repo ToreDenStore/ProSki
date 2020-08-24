@@ -380,6 +380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slider: {fileID: 11603141}
   decreasePerSecond: 3
+  bar: {fileID: 1640645824}
 --- !u!1 &20056725
 GameObject:
   m_ObjectHideFlags: 0
@@ -10657,7 +10658,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 2
+          value: 1
         - useVariable: 1
           name: ArmsFatigueLocal
           tooltip: 
@@ -11146,6 +11147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slider: {fileID: 1799726174}
   decreasePerSecond: 3
+  bar: {fileID: 70788361}
 --- !u!1 &1837745520
 GameObject:
   m_ObjectHideFlags: 0
