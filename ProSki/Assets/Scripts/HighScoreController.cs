@@ -29,6 +29,8 @@ public class HighscoreController : MonoBehaviour
 
         highscores.Add(EncodeString(newHighscoreString));
 
+        print("Saving encoded highscore: " + string.Join(";", highscores));
+
         PlayerPrefs.SetString("highscore", string.Join(";", highscores));
     }
 
