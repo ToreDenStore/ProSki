@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using System.Linq;
 
-public class HighscoreController : MonoBehaviour
+public class HighScoreController : MonoBehaviour
 {
     public GameObject inputObject;
     private TMP_InputField inputFieldComponent;

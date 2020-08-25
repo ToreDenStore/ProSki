@@ -31,7 +31,7 @@ public class HighscoreResultController : MonoBehaviour
                 {
                     continue;
                 }
-                string decodedHighscore = HighscoreController.DecodeString(encodedHighscore);
+                string decodedHighscore = HighScoreController.DecodeString(encodedHighscore);
                 print("Decoded highscore: " + decodedHighscore);
                 string[] array = decodedHighscore.Split('§');
                 string name = array[0];
