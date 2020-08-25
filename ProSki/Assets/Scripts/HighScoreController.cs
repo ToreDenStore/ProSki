@@ -23,7 +23,7 @@ public class HighscoreController : MonoBehaviour
 
         //Each element in highScores is encoded, but looks like: "Jonatan_:_2:12:42"
 
-        string newHighscoreString = playerName + "_:_" + TMPTextController.FormatFloatTimeToGameTime(time).Substring(6);
+        string newHighscoreString = playerName + "§" + time.ToString(); //TMPTextController.FormatFloatTimeToGameTime(time).Substring(6);
 
         print("Saving highscore: " + newHighscoreString);
 
