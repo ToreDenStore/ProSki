@@ -19,7 +19,7 @@ public class TMPTextController : MonoBehaviour
         textElement.SetText(text);
     }
 
-    public string FormatFloatTimeToGameTime(float floatTime)
+    public static string FormatFloatTimeToGameTime(float floatTime)
     {
         string minutes = Mathf.Floor(floatTime / 60).ToString();
         string seconds = (floatTime % 60).ToString("00");
