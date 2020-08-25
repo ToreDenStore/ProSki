@@ -2883,7 +2883,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          typeName: HighScoreController
+          typeName: HighscoreController
           value: {fileID: 497086078}
         fsmVarParams:
         - variableName: Time
@@ -3009,7 +3009,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          enumName: 
+          enumName: UnityEngine.SceneManagement.LoadSceneMode
           intValue: 0
         fsmFloatParams: []
         fsmIntParams:

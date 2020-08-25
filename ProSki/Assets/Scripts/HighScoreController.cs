@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using System.Linq;
 
-public class HighScoreController : MonoBehaviour
+public class HighscoreController : MonoBehaviour
 {
     public GameObject inputObject;
     private TMP_InputField inputFieldComponent;
@@ -23,7 +23,7 @@ public class HighScoreController : MonoBehaviour
 
         //Each element in highScores is encoded, but looks like: "Jonatan_:_2:12:42"
 
-        string newHighscoreString = playerName + "_:_" + TMPTextController.FormatFloatTimeToGameTime(time);
+        string newHighscoreString = playerName + "_:_" + TMPTextController.FormatFloatTimeToGameTime(time).Substring(6);
 
         print("Saving highscore: " + newHighscoreString);
 
@@ -34,7 +34,13 @@ public class HighScoreController : MonoBehaviour
 
     public static string EncodeString(string text)
     {
-        var plainTextBytes = System.Text.Encoding.UTF8.GetBytes(text);
+        byte[] plainTextBytes = System.Text.Encoding.UTF8.GetBytes(text);
         return System.Convert.ToBase64String(plainTextBytes);
+    }
+
+    public static string DecodeString(string text)
+    {
+        byte[] decodedBytes = System.Convert.FromBase64String(text);
+        return System.Text.Encoding.UTF8.GetString(decodedBytes);
     }
 }
