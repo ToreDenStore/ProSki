@@ -18204,7 +18204,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 522.60156
+        x: 682.60156
         y: 199.53125
         width: 189
         height: 32
@@ -18328,7 +18328,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1280.9062
+        x: 1440.9062
         y: 120.21875
         width: 184
         height: 32
@@ -18438,7 +18438,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1287.2344
+        x: 1447.2344
         y: 181.65625
         width: 185
         height: 32
@@ -18548,7 +18548,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 910.6719
+        x: 1070.6719
         y: 142.64062
         width: 221
         height: 48
@@ -18666,7 +18666,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 577.6328
+        x: 737.6328
         y: 401.83594
         width: 165
         height: 32
@@ -18790,7 +18790,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1491.1719
+        x: 1651.1719
         y: 465.89844
         width: 143
         height: 32
@@ -19154,7 +19154,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 948.28125
+        x: 1108.2812
         y: 357.14062
         width: 142
         height: 48
@@ -19271,7 +19271,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 965.7969
+        x: 1125.7969
         y: 494.97656
         width: 142
         height: 32
@@ -19370,7 +19370,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 914.4297
+        x: 1074.4297
         y: 237.04688
         width: 202
         height: 48
@@ -19487,7 +19487,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 579.2656
+        x: 739.2656
         y: 610.6953
         width: 201
         height: 32
@@ -19574,7 +19574,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 943.90625
+        x: 1103.9062
         y: 610.7344
         width: 125
         height: 16
@@ -19757,7 +19757,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 247.34375
+        x: 407.34375
         y: 199.42188
         width: 118
         height: 32
@@ -19888,7 +19888,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 363.64844
+        x: 523.64844
         y: 389.08594
         width: 114
         height: 32
@@ -20019,7 +20019,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 56.617188
+        x: 216.61719
         y: 308.28906
         width: 144
         height: 16
@@ -20098,7 +20098,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1546
+        x: 1706
         y: 225
         width: 114
         height: 32
@@ -20465,7 +20465,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1553.2344
+        x: 1713.2344
         y: 281.5547
         width: 141
         height: 48
@@ -20547,7 +20547,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1398.7891
+        x: 1558.7891
         y: 312.60156
         width: 100
         height: 32
@@ -20619,7 +20619,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1188.4062
+        x: 1348.4062
         y: 298.9922
         width: 122
         height: 32
@@ -20724,7 +20724,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1576.1094
+        x: 1736.1094
         y: 384.21094
         width: 151
         height: 48
@@ -20806,7 +20806,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1400.8203
+        x: 1560.8203
         y: 415.96875
         width: 100
         height: 32
@@ -20878,7 +20878,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1184.3516
+        x: 1344.3516
         y: 400.6797
         width: 158
         height: 32
@@ -20983,7 +20983,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 595.7656
+        x: 755.7656
         y: 113.1875
         width: 143
         height: 32
@@ -21057,7 +21057,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1222
+        x: 1382
         y: 484.60938
         width: 153
         height: 32
@@ -21126,6 +21126,78 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 00000000000000000100000000000000
         paramByteDataSize: 00000000000000000000000001000000
+    - name: Wait 1 sec
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 50.632812
+        y: 307.125
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Paused
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.Wait
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 48c01101
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - FINISHED
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0f0000001700000001000000
+        paramName:
+        - time
+        - finishEvent
+        - realTime
+        paramDataPos: 000000000000000000000000
+        paramByteDataSize: 000000000000000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -21226,14 +21298,6 @@ MonoBehaviour:
       linkConstraint: 0
       colorIndex: 0
     - fsmEvent:
-        name: Win
-        isSystemEvent: 0
-        isGlobal: 1
-      toState: Paused
-      linkStyle: 0
-      linkConstraint: 0
-      colorIndex: 0
-    - fsmEvent:
         name: StartSwitching1
         isSystemEvent: 0
         isGlobal: 1
@@ -21254,6 +21318,14 @@ MonoBehaviour:
         isSystemEvent: 0
         isGlobal: 1
       toState: Paused
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
+    - fsmEvent:
+        name: Win
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: Wait 1 sec
       linkStyle: 0
       linkConstraint: 0
       colorIndex: 0

@@ -241,11 +241,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="1403.9868"
-     inkscape:cy="-946.4372"
+     inkscape:zoom="0.7"
+     inkscape:cx="584.52027"
+     inkscape:cy="101.23202"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
@@ -461,6 +461,76 @@
          width="123.53068"
          id="rect889-4"
          style="opacity:1;fill:url(#radialGradient919-6);fill-opacity:1;stroke:none;stroke-width:0.14087126;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="House">
+    <g
+       id="g1025"
+       transform="translate(8.3154763,74.839287)"
+       inkscape:export-filename="C:\Users\ToreDenStore\Desktop\Jonatan\Projects\Sommarkurs 2020\Skier game\Artwork\Exports\House.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200">
+      <rect
+         ry="0"
+         y="287.41733"
+         x="153.67999"
+         height="32.874149"
+         width="52.117561"
+         id="rect949"
+         style="opacity:1;fill:#c2a591;fill-opacity:1;stroke:none;stroke-width:0.16249397;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" />
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path951"
+         d="m 153.67999,287.41733 26.99422,-23.78703 25.12334,23.78703 z"
+         style="fill:#c2a591;fill-opacity:1;stroke:none;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <rect
+         y="299.57803"
+         x="157.02086"
+         height="13.630747"
+         width="7.3499117"
+         id="rect953"
+         style="opacity:1;fill:#91b1c2;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" />
+      <rect
+         y="299.57803"
+         x="165.84074"
+         height="13.630748"
+         width="7.3499117"
+         id="rect953-5"
+         style="opacity:1;fill:#91b1c2;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" />
+      <rect
+         transform="rotate(-42.742306)"
+         y="310.39175"
+         x="-91.227196"
+         height="6.2243233"
+         width="49.609959"
+         id="rect970"
+         style="opacity:1;fill:#c85132;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" />
+      <rect
+         transform="rotate(-135.26487)"
+         y="-60.394775"
+         x="-356.54153"
+         height="4.8313389"
+         width="46.286972"
+         id="rect970-5"
+         style="opacity:1;fill:#c85132;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" />
+      <rect
+         y="276.58636"
+         x="171.32802"
+         height="13.630749"
+         width="7.3499117"
+         id="rect953-5-7"
+         style="opacity:1;fill:#91b1c2;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" />
+      <rect
+         y="276.68085"
+         x="180.58844"
+         height="13.630749"
+         width="7.3499117"
+         id="rect953-5-7-9"
+         style="opacity:1;fill:#91b1c2;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" />
     </g>
   </g>
 </svg>
