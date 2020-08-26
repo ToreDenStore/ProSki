@@ -22400,33 +22400,23 @@ MonoBehaviour:
         serializedVersion: 2
         x: 274
         y: 179
-        width: 122
-        height: 32
+        width: 109
+        height: 16
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
-      transitions:
-      - fsmEvent:
-          name: EscapePressed
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: Show unpaused
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
+      transitions: []
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.SendEvent
         - HutongGames.PlayMaker.Actions.RectTransformSetLocalRotation
-        - HutongGames.PlayMaker.Actions.GetKeyDown
+        - HutongGames.PlayMaker.Actions.SendEvent
         customNames:
         - 
         - 
-        - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 00000000040000000b000000
-        actionHashCodes: 5e69bb0414ae9700ff77a904
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000007000000
+        actionHashCodes: 14ae97005e69bb04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -22482,12 +22472,6 @@ MonoBehaviour:
         fsmArrayParams: []
         fsmEnumParams: []
         fsmFloatParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
         - useVariable: 1
           name: 
           tooltip: 
@@ -22501,19 +22485,19 @@ MonoBehaviour:
           networkSync: 0
           value: 0
         - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
           name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
           value: 0
         fsmIntParams: []
-        fsmBoolParams:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
+        fsmBoolParams: []
         fsmVector2Params: []
         fsmVector3Params:
         - useVariable: 1
@@ -22527,18 +22511,13 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - PausedGlobal
-        - EscapePressed
-        byteData: 0000000000001b000000
+        byteData: 000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1f000000170000000f00000001000000140000001c0000000f0000000f0000000f0000000100000007000000070000001700000011000000
+        paramDataType: 140000001c0000000f0000000f0000000f00000001000000070000001f000000170000000f00000001000000
         paramName:
-        - eventTarget
-        - sendEvent
-        - delay
-        - everyFrame
         - gameObject
         - rotation
         - x
@@ -22546,11 +22525,12 @@ MonoBehaviour:
         - z
         - everyFrame
         - updateType
-        - key
+        - eventTarget
         - sendEvent
-        - storeResult
-        paramDataPos: 0000000000000000000000000000000000000000000000000100000002000000030000000100000002000000060000000100000000000000
-        paramByteDataSize: 0000000000000000000000000100000000000000000000000000000000000000000000000100000004000000040000000000000000000000
+        - delay
+        - everyFrame
+        paramDataPos: 0000000000000000000000000100000002000000000000000100000000000000000000000300000005000000
+        paramByteDataSize: 0000000000000000000000000000000000000000010000000400000000000000000000000000000001000000
     - name: Show unpaused
       description: 
       colorIndex: 0
@@ -22559,32 +22539,22 @@ MonoBehaviour:
         x: 50.5
         y: 178.5
         width: 123
-        height: 32
+        height: 16
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
-      transitions:
-      - fsmEvent:
-          name: EscapePressed
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: Show paused
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
+      transitions: []
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.RectTransformSetLocalRotation
         - HutongGames.PlayMaker.Actions.SendEvent
-        - HutongGames.PlayMaker.Actions.GetKeyDown
         customNames:
         - 
         - 
-        - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 00000000070000000b000000
-        actionHashCodes: 14ae97005e69bb04ff77a904
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000007000000
+        actionHashCodes: 14ae97005e69bb04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -22665,13 +22635,7 @@ MonoBehaviour:
           networkSync: 0
           value: 0
         fsmIntParams: []
-        fsmBoolParams:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
+        fsmBoolParams: []
         fsmVector2Params: []
         fsmVector3Params:
         - useVariable: 1
@@ -22685,13 +22649,12 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - UnpausedGlobal
-        - EscapePressed
-        byteData: 0000000000001b000000
+        byteData: 000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000001c0000000f0000000f0000000f00000001000000070000001f000000170000000f00000001000000070000001700000011000000
+        paramDataType: 140000001c0000000f0000000f0000000f00000001000000070000001f000000170000000f00000001000000
         paramName:
         - gameObject
         - rotation
@@ -22704,11 +22667,8 @@ MonoBehaviour:
         - sendEvent
         - delay
         - everyFrame
-        - key
-        - sendEvent
-        - storeResult
-        paramDataPos: 0000000000000000000000000100000002000000000000000100000000000000000000000300000005000000060000000100000000000000
-        paramByteDataSize: 0000000000000000000000000000000000000000010000000400000000000000000000000000000001000000040000000000000000000000
+        paramDataPos: 0000000000000000000000000100000002000000000000000100000000000000000000000300000005000000
+        paramByteDataSize: 0000000000000000000000000000000000000000010000000400000000000000000000000000000001000000
     events:
     - name: EscapePressed
       isSystemEvent: 0
