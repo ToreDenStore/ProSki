@@ -21230,6 +21230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 909faf960ca01b74b9273609f8442ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveAudio: {fileID: 1708116793}
 --- !u!82 &1708116793
 AudioSource:
   m_ObjectHideFlags: 0

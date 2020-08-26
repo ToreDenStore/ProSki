@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMoveScript : MonoBehaviour
 {
-    private AudioSource moveAudio;
+    public AudioSource moveAudio;
     private bool audioIsPlaying;
     private Rigidbody2D rb;
     private bool isPaused;
@@ -13,13 +13,13 @@ public class PlayerMoveScript : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        moveAudio = GetComponent<AudioSource>();
+        //moveAudio = GetComponent<AudioSource>();
     }
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        moveAudio = GetComponent<AudioSource>();
+        //moveAudio = GetComponent<AudioSource>();
     }
 
     void Update()
