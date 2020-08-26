@@ -41,8 +41,10 @@ public class PlayerMoveScript : MonoBehaviour
 
             if (audioIsPlaying)
             {
+                //print("Veloctiy: " + rb.velocity.magnitude);
                 moveAudio.pitch = rb.velocity.magnitude / 3;
-                moveAudio.volume = Mathf.Sqrt(rb.velocity.magnitude / 6);
+                moveAudio.volume = 1 - 1 / Mathf.Max(rb.velocity.magnitude, 1.3f);
+                //print("New volume: " + moveAudio.volume);
             }
         } else if(audioIsPlaying)
         {
