@@ -10,18 +10,13 @@ public class MapGeneration : MonoBehaviour
     public GameObject finishBlock;
 
     public int numberOfBlocks;
-    public int seed;
     public int baseWidth;
     public int baseHeight;
-    
-    void Start()
+
+    public void GenerateMap(int seed)
     {
         Random.InitState(seed);
-        GenerateMap();
-    }
 
-    void GenerateMap()
-    {
         GameObject latestBlock = startBlock;
 
         for (int i = 0; i < numberOfBlocks; i++)
