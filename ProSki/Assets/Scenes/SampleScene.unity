@@ -754,6 +754,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sitting_icon
       objectReference: {fileID: 0}
+    - target: {fileID: 2023847617765712174, guid: 33f49adf57d328a45a65a6aee5847a0d,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7a9da05a37c8dcc41a967ff7a150f338,
+        type: 3}
     - target: {fileID: 2023847617765712175, guid: 33f49adf57d328a45a65a6aee5847a0d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3968,6 +3974,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diagonala_icon
       objectReference: {fileID: 0}
+    - target: {fileID: 2023847617765712174, guid: 33f49adf57d328a45a65a6aee5847a0d,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2829f6f33cd75fe42a3d9c54bea40e17,
+        type: 3}
     - target: {fileID: 2023847617765712175, guid: 33f49adf57d328a45a65a6aee5847a0d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15835,6 +15847,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Staka_icon
       objectReference: {fileID: 0}
+    - target: {fileID: 2023847617765712174, guid: 33f49adf57d328a45a65a6aee5847a0d,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 08b9172c520af134dbe57df02f7b669e,
+        type: 3}
     - target: {fileID: 2023847617765712175, guid: 33f49adf57d328a45a65a6aee5847a0d,
         type: 3}
       propertyPath: m_LocalPosition.x

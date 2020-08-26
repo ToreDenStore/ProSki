@@ -9,14 +9,14 @@ public class ActiveIconController : MonoBehaviour
     public GameObject stakaIcon;
     public GameObject sittingIcon;
 
-    private Animator saxaAnimator;
+    //private Animator saxaAnimator;
     private Animator diagonalaAnimator;
     private Animator stakaAnimator;
     private Animator sittingAnimator;
 
     private void Awake()
     {
-        saxaAnimator = saxaIcon.GetComponent<Animator>();
+        //saxaAnimator = saxaIcon.GetComponent<Animator>();
         diagonalaAnimator = diagonalaIcon.GetComponent<Animator>();
         stakaAnimator = stakaIcon.GetComponent<Animator>();
         sittingAnimator = sittingIcon.GetComponent<Animator>();
@@ -24,7 +24,7 @@ public class ActiveIconController : MonoBehaviour
 
     public void SetActiveIcon(int iconNumber)
     {
-        saxaAnimator.SetBool("InterruptBool", true);
+        //saxaAnimator.SetBool("InterruptBool", true);
         diagonalaAnimator.SetBool("InterruptBool", true);
         stakaAnimator.SetBool("InterruptBool", true);
         sittingAnimator.SetBool("InterruptBool", true);
@@ -33,9 +33,9 @@ public class ActiveIconController : MonoBehaviour
 
         switch (iconNumber)
         {
-            case 1:
-                targetAnimator = saxaAnimator;
-                break;
+            //case 1:
+            //    targetAnimator = saxaAnimator;
+            //    break;
             case 2:
                 targetAnimator = diagonalaAnimator;
                 break;
