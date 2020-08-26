@@ -65,7 +65,7 @@ public class PlayerMoveScript : MonoBehaviour
 
         if (fatigue >= 90)
         {
-            factor = factor / 2;
+            factor = 3 * factor / 4;
         }
 
         print("Staka force factor: " + factor);
