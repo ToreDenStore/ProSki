@@ -10,18 +10,13 @@ public class MapGeneration : MonoBehaviour
     public GameObject finishBlock;
 
     public int numberOfBlocks;
-    public int seed;
     public int baseWidth;
     public int baseHeight;
-    
-    void Start()
+
+    public void GenerateMap(int seed)
     {
         Random.InitState(seed);
-        GenerateMap();
-    }
 
-    void GenerateMap()
-    {
         GameObject latestBlock = startBlock;
 
         for (int i = 0; i < numberOfBlocks; i++)
@@ -31,7 +26,7 @@ public class MapGeneration : MonoBehaviour
             float widthScaleLatest = latestBlock.transform.localScale.x;
             float heightScaleLatest = latestBlock.transform.localScale.y;
 
-            int newBlockType = Random.Range(i, i+3) - i;
+            int newBlockType = Random.Range(i, i+5) - i;
             print("Flat or curve? " + newBlockType);
 
             float widthScaleNew = (Random.Range(0.5f + i, 1.5f + i) - i);
@@ -70,7 +65,7 @@ public class MapGeneration : MonoBehaviour
             {
                 //Flat
                 latestBlock = GameObject.Instantiate(flatBlockPrefab, positionNew, new Quaternion());
-            } else if (newBlockType == 2)
+            } else if (newBlockType == 2 || newBlockType == 3)
             {
                 //Curve up
                 latestBlock = GameObject.Instantiate(curveBlockPrefab, positionNew, new Quaternion());
