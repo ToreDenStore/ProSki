@@ -756,8 +756,8 @@ RectTransform:
   - {fileID: 1089824773}
   - {fileID: 47195800}
   - {fileID: 1203608510}
-  - {fileID: 1294699150}
   - {fileID: 2113564950}
+  - {fileID: 1294699150}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1606,7 +1606,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 0101
-        actionIsOpen: 0101
+        actionIsOpen: 0000
         actionStartIndex: 0000000007000000
         actionHashCodes: 14ae970043e24103
         unityObjectParams: []
@@ -1749,13 +1749,15 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.RectTransformSetLocalRotation
         - HutongGames.PlayMaker.Actions.CallMethod
+        - HutongGames.PlayMaker.Actions.RectTransformSetLocalRotation
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000007000000
-        actionHashCodes: 14ae9700ca51e900
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010001
+        actionStartIndex: 00000000070000000e000000
+        actionHashCodes: 14ae9700ca51e90014ae9700
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -1767,6 +1769,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 1294699149}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 2113564949}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -1858,6 +1868,24 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 90
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmIntParams: []
         fsmBoolParams: []
         fsmVector2Params: []
@@ -1868,17 +1896,23 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: {x: 0, y: 0, z: 0}
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 00000000000000
+        byteData: 000000000000000000000000
         arrayParamSizes: 01000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmVar
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000001c0000000f0000000f0000000f000000010000000700000018000000120000000c00000027000000270000000100000001000000
+        paramDataType: 140000001c0000000f0000000f0000000f000000010000000700000018000000120000000c00000027000000270000000100000001000000140000001c0000000f0000000f0000000f0000000100000007000000
         paramName:
         - gameObject
         - rotation
@@ -1894,15 +1928,22 @@ MonoBehaviour:
         - storeResult
         - everyFrame
         - manualUI
-        paramDataPos: 0000000000000000000000000100000002000000000000000100000000000000000000000000000000000000010000000500000006000000
-        paramByteDataSize: 0000000000000000000000000000000000000000010000000400000000000000000000000000000000000000000000000100000001000000
+        - gameObject
+        - rotation
+        - x
+        - y
+        - z
+        - everyFrame
+        - updateType
+        paramDataPos: 000000000000000000000000010000000200000000000000010000000000000000000000000000000000000001000000050000000600000001000000010000000300000004000000050000000700000008000000
+        paramByteDataSize: 000000000000000000000000000000000000000001000000040000000000000000000000000000000000000000000000010000000100000000000000000000000000000000000000000000000100000004000000
     - name: Waiting on close click
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 411
-        y: 205
+        x: 473
+        y: 187
         width: 156
         height: 32
       isBreakpoint: 0
@@ -1913,7 +1954,7 @@ MonoBehaviour:
           name: Close clicked
           isSystemEvent: 0
           isGlobal: 0
-        toState: Waiting on click
+        toState: Show buttons again
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -1923,7 +1964,7 @@ MonoBehaviour:
         customNames:
         - 
         actionEnabled: 01
-        actionIsOpen: 01
+        actionIsOpen: 00
         actionStartIndex: 00000000
         actionHashCodes: 43e24103
         unityObjectParams: []
@@ -2002,6 +2043,107 @@ MonoBehaviour:
         - sendEvent
         paramDataPos: 000000000000000000000000
         paramByteDataSize: 000000000000000000000000
+    - name: Show buttons again
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 254
+        y: 221
+        width: 146
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Waiting on click
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.RectTransformSetLocalRotation
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 14ae9700
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 2113564949}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 0000000000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 140000001c0000000f0000000f0000000f0000000100000007000000
+        paramName:
+        - gameObject
+        - rotation
+        - x
+        - y
+        - z
+        - everyFrame
+        - updateType
+        paramDataPos: 00000000000000000000000001000000020000000000000001000000
+        paramByteDataSize: 00000000000000000000000000000000000000000100000004000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -2188,7 +2330,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1294699150
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2203,7 +2345,7 @@ RectTransform:
   - {fileID: 10901977}
   - {fileID: 1527312268}
   m_Father: {fileID: 669489320}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3155,7 +3297,7 @@ RectTransform:
   - {fileID: 1039692138}
   - {fileID: 1262623105}
   m_Father: {fileID: 669489320}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
