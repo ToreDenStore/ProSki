@@ -4246,7 +4246,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ReferenceResolution: {x: 2560, y: 1440}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -4286,10 +4286,10 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 2074325408}
+  - {fileID: 522826315}
   - {fileID: 119280031}
   - {fileID: 1186763071}
   - {fileID: 75310127}
-  - {fileID: 522826315}
   - {fileID: 398824538}
   - {fileID: 462728593}
   - {fileID: 1909149890}
@@ -7400,7 +7400,7 @@ RectTransform:
   m_LocalScale: {x: 3.0915, y: 3.0915, z: 3.0915}
   m_Children: []
   m_Father: {fileID: 140835996}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
